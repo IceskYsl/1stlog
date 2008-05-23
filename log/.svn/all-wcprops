@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 26
+/svn/!svn/ver/66/trunk/log
+END
+test.log
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/66/trunk/log/test.log
+END
+development.log
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/66/trunk/log/development.log
+END
+server.log
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/66/trunk/log/server.log
+END

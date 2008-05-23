@@ -1,0 +1,14 @@
+<% if @topics.size ==0%>
+<div class="entry">
+<h2>找不到你需要的内容...</h2>
+</div>
+<% else %>
+
+<h2>>><%=@year%>年<%=@month%>月的归档文章有<%=@topics.size%>篇</h2>
+<% @topics.each do |topic| %>
+    <%= render(:partial => "shared/common_entry",:object=>topic) %>
+<% end %>
+<% end %>
+
+
+	

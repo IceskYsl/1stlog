@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/66/trunk/app/views/admin/caches
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/66/trunk/app/views/admin/caches/index.html.erb
+END
+counts.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/66/trunk/app/views/admin/caches/counts.html.erb
+END
+refresh.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/66/trunk/app/views/admin/caches/refresh.html.erb
+END
+_items.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/66/trunk/app/views/admin/caches/_items.html.erb
+END
+_slider.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/66/trunk/app/views/admin/caches/_slider.html.erb
+END

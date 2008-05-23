@@ -1,0 +1,18 @@
+<% if $cached_configs['show_metas'].to_i == 1%>﻿	
+  <li><h2><%=item_title ||= "Metas"%></h2>
+    <ul>
+      <% if session[:user_id]%>
+        <li><%=link_to "Publish Topic",{:controller=>"publish",:action=>"index"},{}%></li>
+        <li><%=link_to "Admin",{:controller=>"admin/topic",:action=>"index"},{}%></li>
+      <% else %>
+        <li><%=link_to "Login",{:controller=>"index",:action=>"login"},{}%></li>
+      <% end %>
+      <li><%=link_to "RSS",{:controller=>"feed",:action=>"index"},{:abbr=>"cn 1ster",:title=>"Really Simple Syndication"}%></li>
+      <li><%=link_to "Comments RSS",{:controller=>"feed",:action=>"comments"},{:abbr=>"cn 1ster",:title=>"The latest comments to all posts in RSS"}%></li>
+      <li><a href="http://validator.w3.org/check/referer" title="This page validates as XHTML 1.0 Transitional">Valid <abbr title="eXtensible HyperText Markup Language">XHTML</abbr></a></li>
+      <li><a href="http://jigsaw.w3.org/css-validator/check/referer" title="Valid CSS">Valid CSS</a></li>
+      <li><a href="http://gmpg.org/xfn/"><abbr title="XHTML Friends Network">XFN</abbr></a></li>
+      <li><%=link_to "1sters!","http://www.1sters.com",{:title=>"Powered by 1sters.com",:popup => true}%></li>		
+    </ul>
+  </li>
+<% end %>

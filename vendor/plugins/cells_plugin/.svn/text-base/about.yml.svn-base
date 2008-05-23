@@ -1,0 +1,7 @@
+author: Nick Sutterer, Peter Bex
+summary: Encapsulate logic and views in cells and render them in views or controllers.
+homepage: http://cells.rubyforge.org
+plugin: http://nick.smt.de/svn/cells_repos/trunk
+license: MIT
+version: 1.0
+rails_version: 1.1.6

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/66/trunk/vendor/plugins/theme_support/generators/theme/templates
+END
+layout.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/66/trunk/vendor/plugins/theme_support/generators/theme/templates/layout.rhtml
+END
+theme.yml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/66/trunk/vendor/plugins/theme_support/generators/theme/templates/theme.yml
+END
+layout.liquid
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/66/trunk/vendor/plugins/theme_support/generators/theme/templates/layout.liquid
+END
+preview.png
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/66/trunk/vendor/plugins/theme_support/generators/theme/templates/preview.png
+END
+theme.css
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/66/trunk/vendor/plugins/theme_support/generators/theme/templates/theme.css
+END
+views_readme
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/66/trunk/vendor/plugins/theme_support/generators/theme/templates/views_readme
+END
+about.markdown
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/66/trunk/vendor/plugins/theme_support/generators/theme/templates/about.markdown
+END

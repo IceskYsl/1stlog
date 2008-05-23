@@ -1,0 +1,43 @@
+
+<div class="tableborder">
+  <div class="tableheader">文章管理</div>
+  <div class="leftmenubody">
+    <div class="leftmenuitem">•<%=link_to "文章管理",admin_topics_path%></div>
+    
+    <div class="leftmenuitem">•<%=link_to "添加文章",new_admin_topic_path%></div>
+    
+    
+  </div>
+</div> <!--END leftmenubody -->
+
+<div class="tableborder">  
+  <div class="tableheader">按照分类管理</div>
+  <div class="leftmenubody">    
+    <% @topic_categories.each do |category|%>
+      <div class="leftmenuitem">•
+        <%=link_to category.title,list_admin_topics_path(:category_id=>category.id)%>
+        </div>
+      <% end %>
+    </div> <!--END leftmenubody -->
+  </div> <!--END tableborder -->  
+
+  <div class="tableborder">  
+    <div class="tableheader">按照属性管理</div>
+    <div class="leftmenubody">    
+      <% @topic_natures.each do |nature|%>
+        <div class="leftmenuitem">•
+          <%=link_to nature.title,list_admin_topics_path(:nature_id=>nature.id)%>
+          </div>
+        <% end %>
+      </div> <!--END leftmenubody -->
+    </div> <!--END tableborder -->  
+
+    <div class="tableborder">  
+      <div class="tableheader">按照选项管理</div>
+      <div class="leftmenubody">    
+        <div class="leftmenuitem">•<%=link_to "置顶的文章",list_admin_topics_path(:top=>1)%></div>
+        <div class="leftmenuitem">•<%=link_to "非置顶的文章",list_admin_topics_path(:top=>0)%></div>
+        <div class="leftmenuitem">•<%=link_to "隐藏的文章",list_admin_topics_path(:visible=>0)%></div>
+        <div class="leftmenuitem">•<%=link_to "显示的文章",list_admin_topics_path(:visible=>1)%></div>
+      </div> <!--END leftmenubody -->
+    </div> <!--END tableborder -->  

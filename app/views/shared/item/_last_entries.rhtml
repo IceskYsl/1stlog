@@ -1,0 +1,9 @@
+<% if $cached_configs['show_last_entries'].to_i == 1%>﻿	
+  <li id="topics"><h2><%=item_title ||= "Last Entries"  %></h2>
+    <ul>	
+      <% @new_topics.each do |topic| %> 
+        <li><%=link_to h(topic.title),{:controller=>"topics",:action=>"show",:id=>topic.id},{:title=>topic.title}%></li>
+        <% end %>
+      </ul>
+    </li>	
+  <% end %>	

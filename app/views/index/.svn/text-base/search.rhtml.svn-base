@@ -1,0 +1,37 @@
+<% if @topics.size ==0%>
+<div class="entry">
+<h2>找不到你需要的内容...</h2>
+</div>
+<% else %>
+
+<h2>满足您的查找条件的有<%=@topics.size%>条..</h2>
+<% @topics.each do |topic| %>
+
+	<div class="entry">
+		<div class="latest">
+		<h2 id="post-8">
+		[<%=link_to h(topic.nature.title),{:controller=>"nature",:action=>"index",:id=>topic.nature_id},{:title=>topic.nature.description}%>]
+		<%=link_to h(topic.title),{:controller=>"topic",:action=>"index",:id=>topic.id},{:title=>topic.title}%></h2>	
+		<div class="meta">
+			Posted on  <%=topic.created_at.to_s(:short)%>
+			in 
+			<%=link_to h(topic.category.title),{:controller=>"category",:action=>"index",:id=>topic.category_id},{:title=>topic.category.title}%> 
+			by <%=topic.user.nickname%>
+		</div>
+		<div class="main">
+		<p>
+		
+		<%=simple_format  sanitize(truncate(strip_tags(topic.body), topic.snippetcounts*2))%>
+		</p>				
+        	<ul class="readmore">
+        				<%=link_to "Continue reading...",{:controller=>"topic",:action=>"index",:id=>topic.id},{:title=>"Continue reading..."}%>(<%=topic.views_count%>)
+        				<%=link_to "Leave a comment...",{:controller=>"topic",:action=>"index",:id=>topic.id},{:title=>"Comment on An image in a post"}%>(<%=topic.comments_count%>)</li>
+        	</ul>
+        </div>
+		</div>
+	</div>
+<% end %>
+<% end %>
+
+
+	

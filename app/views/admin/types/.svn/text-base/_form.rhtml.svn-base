@@ -1,0 +1,31 @@
+<!--[form:type]-->
+<%= error_messages_for 'type' %>
+  <tr class="tablecell">
+	<td width="50%">
+	<b>分类名称</b><br/>
+	填写分类的名称,会显示在你的首页上</td>
+	<td>
+	<%= text_field 'type', 'title' ,{:value=>"",:size=>50, :class => 'formfield' } %>
+	</td>
+  </tr>
+
+  <tr class="tablecell">
+	<td width="50%">
+	<b>分类描述</b><br/>
+	填写你对该分类的描述以更好的标识这个分类的作用</td>
+	<td>
+	<%= text_field 'type', 'description' ,{:size=>50,:maxlength=>"50",:value=>"", :class => 'formfield'} %>
+	</td>
+  </tr>    
+
+ <tr class="tablecell">
+	<td width="50%">
+	<b>排列位置</b><br/>
+	填写你想该分类的排列位置</td>
+	<td>
+	<%= text_field 'type', 'position' ,{:size=>50,:maxlength=>"50",:value=>"1", :class => 'formfield'}  %>
+	</td>
+</tr> 
+
+<!--[eoform:type]-->
+

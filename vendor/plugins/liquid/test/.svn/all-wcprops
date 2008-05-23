@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/66/trunk/vendor/plugins/liquid/test
+END
+include_tag_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/66/trunk/vendor/plugins/liquid/test/include_tag_test.rb
+END
+test_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/66/trunk/vendor/plugins/liquid/test/test_helper.rb
+END
+helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/66/trunk/vendor/plugins/liquid/test/helper.rb
+END
+unless_else_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/66/trunk/vendor/plugins/liquid/test/unless_else_test.rb
+END
+module_ex_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/66/trunk/vendor/plugins/liquid/test/module_ex_test.rb
+END
+file_system_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/66/trunk/vendor/plugins/liquid/test/file_system_test.rb
+END
+context_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/66/trunk/vendor/plugins/liquid/test/context_test.rb
+END
+variable_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/66/trunk/vendor/plugins/liquid/test/variable_test.rb
+END
+filter_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/66/trunk/vendor/plugins/liquid/test/filter_test.rb
+END
+condition_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/66/trunk/vendor/plugins/liquid/test/condition_test.rb
+END
+strainer_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/66/trunk/vendor/plugins/liquid/test/strainer_test.rb
+END
+statements_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/66/trunk/vendor/plugins/liquid/test/statements_test.rb
+END
+block_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/66/trunk/vendor/plugins/liquid/test/block_test.rb
+END
+regexp_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/66/trunk/vendor/plugins/liquid/test/regexp_test.rb
+END
+standard_tag_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/66/trunk/vendor/plugins/liquid/test/standard_tag_test.rb
+END
+error_handling_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/66/trunk/vendor/plugins/liquid/test/error_handling_test.rb
+END
+html_tag_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/66/trunk/vendor/plugins/liquid/test/html_tag_test.rb
+END
+output_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/66/trunk/vendor/plugins/liquid/test/output_test.rb
+END
+parsing_quirks_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/66/trunk/vendor/plugins/liquid/test/parsing_quirks_test.rb
+END
+drop_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/66/trunk/vendor/plugins/liquid/test/drop_test.rb
+END
+standard_filter_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/66/trunk/vendor/plugins/liquid/test/standard_filter_test.rb
+END
+if_else_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/66/trunk/vendor/plugins/liquid/test/if_else_test.rb
+END
+security_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/66/trunk/vendor/plugins/liquid/test/security_test.rb
+END
+template_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/66/trunk/vendor/plugins/liquid/test/template_test.rb
+END

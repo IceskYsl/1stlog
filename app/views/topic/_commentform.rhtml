@@ -1,0 +1,36 @@
+<div class="postinput">
+<%#=session[:noisy_image].code%>
+<p>
+<%= text_field 'comment', 'name'%>
+<label for="comment_name"><small>Name (required)</small></label>
+</p>
+<p>
+<%= text_field 'comment', 'email'  %>
+<label for="comment_email"><small>Mail (will not be published) (required)</small></label>
+</p>
+<p>
+<%= text_field 'comment', 'website'  %>
+<label for="comment_website"><small>Website</small></label>
+</p>
+<p>
+<%= text_area "comment","body","cols" => 46, "rows" => 4,"value"=>""%>  
+</p>
+<% if @show_noisy_image.value == "1" %>
+<p>
+输入验证码:<%=text_field_tag :code%>
+<img height='30' src="/topic/code_image">
+</p>
+<% else %>
+
+<% end %>
+
+<p>
+<%= hidden_field 'comment', 'topic_id'  ,"value"=>"#{@topic.id}" %>
+</p>
+<p>
+<%= hidden_field 'comment', 'type_id'  ,"value"=>"#{@topic.type_id}"%>
+</p>
+<p>
+<input name="submit" type="image" id="submit" class="input-submit" tabindex="5" value="Submit Comment" title="Please review your comment before submitting" alt="Post a comment" src="/images/post-a-comment.png" />
+</p>
+</div> <!-- /post-input -->

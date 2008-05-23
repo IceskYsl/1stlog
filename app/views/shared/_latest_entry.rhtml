@@ -1,0 +1,36 @@
+
+	<div class="post">
+		
+		<p class="date"><span class="month">August </span><span class="day">28</span><span class="year">, 2007</span></p>
+		<!-- 文章标题   -->
+		<h2 class="title">
+		<% if @show_natures.value == "1"%>
+		<% if latest_entry.istop.to_i == 1 %>
+		<font color="#FF0000">置顶</font>
+		<% end %>
+		[<%=link_to h(latest_entry.nature.title),{:controller=>"nature",:action=>"index",:id=>latest_entry.nature_id},{:title=>latest_entry.nature.description}%>]
+		<% else %>
+		<% end %>
+		<%=link_to h(latest_entry.title),{:controller=>"topic",:action=>"index",:id=>latest_entry.id},{:title=>latest_entry.title}%>
+		</h2>	
+		<!-- 作者等信息   -->
+		<p class="byline"><small>
+			Posted on  <%=latest_entry.created_at.to_s(:short)%>
+			in 
+			<%=link_to h(latest_entry.category.title),{:controller=>"category",:action=>"index",:id=>latest_entry.category_id},{:title=>latest_entry.category.description}%> 
+			by <%=latest_entry.user.nickname%>
+		</small></p>
+		<!-- 文章主题内容   -->
+		<div class="entry">
+			<p>
+			<%=simple_format  sanitize(truncate(strip_tags(latest_entry.body), latest_entry.snippetcounts*2))%>
+			</p>	
+		</div>					
+			<p class="links">
+				<%=link_to "Continue reading...",{:controller=>"topic",:action=>"index",:id=>latest_entry.id},{:title=>"Continue reading..."}%>(<%=latest_entry.views_count%>)
+				<%=link_to "Leave a comment...",{:controller=>"topic",:action=>"index",:id=>latest_entry.id},{:title=>"Comment on An image in a post"}%>(<%=latest_entry.comments_count%>)
+			</p>
+
+
+	
+	</div>

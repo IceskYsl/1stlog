@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <title><%=$cached_configs['name']%></title>
+    <%= render(:partial => "shared/head") %>
+    <%= theme_stylesheet_link_tag 'simple' %>
+  </head>
+  
+  <body>
+    
+    <div id="wapper">
+      <!-- start header -->
+      <div id="header">
+        <div id="logo">
+          <h1>
+            <%=link_to $cached_configs['title'],$cached_configs['url'] %>
+          </h1>
+          <%=$cached_configs['subtitle']%>
+        </div>
+        
+        <div id="menu">
+          <ul>
+            <li class="current_page_item"><a href="#">首页</a></li>
+            <li><a href="#">博客</a></li>
+            <li><a href="#">照片</a></li>
+            <li><a href="#">关于我</a></li>
+            <li><a href="#">联系我</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- end header -->
+
+    <!-- start page -->
+      <div id="page">
+        <!-- start content -->
+        <div id="content">
+          
+          <% if flash[:notice] -%>
+            <div id ="notice"> <%= flash[:notice] %> </div>
+          <% end -%>
+<%= @content_for_layout %>
+        </div>
+        <!-- end content -->
+         
+         <!-- start sidebar -->
+        <div id="sidebar">
+          <ul>
+            <%=render(:partial => "shared/item/about", :locals => { :item_title => "关于我们" }) %>
+            
+            <%=render :partial=>"shared/item/natures"%>
+            <%=render :partial=>"shared/item/types"%>
+            <%=render :partial=>"shared/item/hot_tags"%>
+            <%=render :partial=>"shared/item/archives"%>
+            <%=render :partial=>"shared/item/users", :locals => { :item_title => "关于作者" }%>
+            
+            <%=render :partial=>"shared/item/last_entries", :locals => { :item_title => "最新文章" }%>
+            
+  
+  
+  
+  
+            <li id="topics">
+              <h2>热门文章</h2>
+              <ul>
+                <li><a href="#">Nulla luctus eleifend purus</a></li>
+                <li><a href="#">Praesent scelerisque scelerisque erat</a></li>
+                
+              </ul>
+            </li>
+            
+  
+    <%=render :partial=>"shared/item/statistics"%>
+    <%=render :partial=>"shared/item/metas"%>
+          </ul>
+        </div>
+        <!-- end sidebar -->
+
+      </div>
+      <!-- end page -->
+
+    <!-- start footer -->
+      <div id="footer">
+        <%= render(:partial => "shared/footer") %>
+      </div>
+      <!-- end footer -->
+    </div>
+  </body>
+  
+</html>

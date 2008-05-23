@@ -1,0 +1,38 @@
+
+<br/>
+
+<%= error_messages_for 'user' %>
+
+<!--[form:user]-->
+<table width="100%" cellspacing="4" cellpadding="4" border="0" align="center" bgcolor="#f0f0f0">
+<tbody>
+<tr>
+<td>登陆名:</td>
+<td><%=@user.login_name%></td></tr>
+<tr>
+<td>用户组:</td>
+<td><%=@user.user_group.title%></td></tr>
+
+<tr>
+<td>加入时间:</td>
+<td><%=@user.created_at.to_s(:short)%></td></tr>
+<tr>
+<td>发表文章:</td>
+<td><%=@user.topics_count%></td></tr>
+<tr>
+<td width="15%">显示名:</td>
+<td><%= text_field 'user', 'nickname'  %></td></tr>
+<tr>
+<td width="15%">电子邮件:</td>
+<td><%= text_field 'user', 'email'  %></td></tr>
+
+<tr>
+<td>个人描述:</td>
+<td><%= text_area("user", "personality", "cols" => 40, "rows" => 4) %></td></tr>
+    <%= hidden_field "user", "user_group_id",:value=>"#{session[:user_group_id]}"%>
+
+<tr>
+<td>&nbsp;</td>
+<td><%= submit_tag "修改资料..!" %></td></tr>
+</tbody></table>
+<!--[eoform:user]-->

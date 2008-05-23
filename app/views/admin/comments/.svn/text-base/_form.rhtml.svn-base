@@ -1,0 +1,20 @@
+<%= error_messages_for 'comment' %>
+
+<!--[form:comment]-->
+<p><label for="comment_body">Body</label><br/>
+<%= text_area 'comment', 'body' , "cols" => 80, "rows" => 5  %></p>
+
+<p><%= text_field 'comment', 'name'  %>
+<label for="comment_name">Name</label>
+</p>
+
+<p><%= text_field 'comment', 'email'  %>
+<label for="comment_email">Email</label>
+</p>
+
+<p><%= text_field 'comment', 'website'  %>
+<label for="comment_website">Website</label>
+</p>
+
+<!--[eoform:comment]-->
+

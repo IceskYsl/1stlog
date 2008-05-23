@@ -1,0 +1,14 @@
+class ArchivesController < ApplicationController
+ before_filter :nav
+ #layout "index"
+# layout :theme_layout_func
+ 
+  def show
+  @year = params[:year].to_i
+  @month= params[:month].to_i
+  time_at=Date.new(@year,@month)
+#  @topics = Topic.find(:all,:conditions => [ "date_format(created_at,'%Y%M') = ?",date_format(time_at,'%Y%M') ],:order => "created_at DESC")
+  @topics = Topic.find_by_sql "SELECT  * FROM topics s  WHERE date_format(s.created_at,'%Y%M')= date_format('#{time_at}','%Y%M') ORDER BY created_at DESC;"
+  end
+  
+end

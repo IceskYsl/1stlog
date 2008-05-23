@@ -1,0 +1,18 @@
+index..<br/>
+<h3>This is a cells render test..ok?</h3>
+<%= render_cell :youtube, :my_favorite_videos%>
+ 
+
+<% @topics.each do |topic| %>
+    
+
+  <%= render(:partial => "shared/common_entry",:object=>topic) %>
+
+<% end %>
+
+
+<div style="">
+  <span class=”pagelink”>
+    <%= will_paginate @topics %>
+  </span>
+</div>		

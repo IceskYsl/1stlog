@@ -1,0 +1,11 @@
+
+<div class="tableborder">
+  <div class="tableheader">附件管理</div>
+  <div class="leftmenubody">
+    <div class="leftmenuitem">&#8226; <%=link_to "附件管理",admin_attachments_path%> </div>
+    
+
+  </div>
+</div>
+
+ 

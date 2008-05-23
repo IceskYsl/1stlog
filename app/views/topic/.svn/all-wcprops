@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/70/trunk/app/views/topic
+END
+view.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/66/trunk/app/views/topic/view.rhtml
+END
+_commentform.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/66/trunk/app/views/topic/_commentform.rhtml
+END
+index.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/70/trunk/app/views/topic/index.rhtml
+END

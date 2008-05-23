@@ -1,0 +1,34 @@
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="rightmainbody">
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+        
+        <tr class="tdbheader">
+          <td nowrap width="10%">名称</td>
+          <td nowrap width="90%">值</td>
+        </tr>
+        <% items.each do |key,value|%>
+          <tr class="tablecell">
+            <td nowrap><%=key%></td>
+            <td nowrap><%=value%></td>
+          </tr>
+       <%end%>
+        
+                     
+               
+        <tr class="tablecell">
+          <td colspan="8" nowrap="nowrap">
+            <div class="records">缓存条数:<%=items.size%></div>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="tablebottom" colspan="2"></td>
+        </tr>
+      </table>
+    </td>
+    
+  </tr>
+  
+</table>

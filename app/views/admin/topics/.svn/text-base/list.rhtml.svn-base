@@ -1,0 +1,27 @@
+﻿<div class="mainbody">
+  <div class="navlink"><a href="#">控制面版</a> » 文章管理</div>
+</div>
+
+
+<div class="mainbody">
+  <table style="width: 100%;" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+        <td style="width: 150px;" valign="top">
+          <%=render(:partial => "slider")%>         
+        </td>
+        
+        <td style="width: 20px;" valign="top"></td>
+        
+        <td valign="top">
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+            <tr><td class="rightmainbody">
+                <%=render(:partial => "items")%>  
+                <%=render(:partial => "actions")%>
+              </td>
+            </tr>
+          </table> 
+          
+        </td>
+      </tr>
+  </tbody></table>
+</div>

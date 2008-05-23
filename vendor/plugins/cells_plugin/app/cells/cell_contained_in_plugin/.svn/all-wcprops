@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/66/trunk/vendor/plugins/cells_plugin/app/cells/cell_contained_in_plugin
+END
+some_view.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/66/trunk/vendor/plugins/cells_plugin/app/cells/cell_contained_in_plugin/some_view.rhtml
+END
+_partial_contained_in_plugin.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/66/trunk/vendor/plugins/cells_plugin/app/cells/cell_contained_in_plugin/_partial_contained_in_plugin.rhtml
+END

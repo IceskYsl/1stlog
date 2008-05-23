@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/70/trunk/app/views/admin/profile
+END
+_user.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/70/trunk/app/views/admin/profile/_user.rhtml
+END
+password.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/66/trunk/app/views/admin/profile/password.rhtml
+END
+index.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/66/trunk/app/views/admin/profile/index.rhtml
+END

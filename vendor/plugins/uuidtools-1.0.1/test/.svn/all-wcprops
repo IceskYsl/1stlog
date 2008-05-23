@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/66/trunk/vendor/plugins/uuidtools-1.0.1/test
+END
+create_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/66/trunk/vendor/plugins/uuidtools-1.0.1/test/create_test.rb
+END
+mac_address_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/66/trunk/vendor/plugins/uuidtools-1.0.1/test/mac_address_test.rb
+END
+parse_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/66/trunk/vendor/plugins/uuidtools-1.0.1/test/parse_test.rb
+END

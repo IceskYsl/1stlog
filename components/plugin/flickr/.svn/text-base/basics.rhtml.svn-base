@@ -1,0 +1,5 @@
+	<li><h2>Flickr basic</h2>
+	<ul>
+    user connt: <%=@users.size%> <br/>
+	</ul>	
+	</li>

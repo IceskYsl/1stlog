@@ -1,0 +1,48 @@
+<%= error_messages_for 'user' %>
+
+<!--[form:user]-->
+
+
+<p>
+<%= text_field 'user', 'login_name'  %>
+<label for="user_login_name">Login name</label>
+</p>
+
+<p>
+<%= text_field 'user', 'nickname'  %>
+<label for="user_nickname">nick name</label>
+</p>
+
+<p>
+<%= password_field 'user', 'password'  %>
+<label for="user_password">password</label>
+</p>
+
+<p>
+<%= password_field 'user', 'password_confirmation'  %>
+<label for="user_password_confirmation">password_confirmation</label>
+</p>
+
+<p>
+<%= text_field 'user', 'email'  %>
+<label for="user_email">Email</label>
+</p>
+
+<p>
+<%= text_field 'user', 'im'  %>
+<label for="user_im">Im</label>
+</p>
+
+<p>
+<%= file_field 'user', 'tmp_file'  %>
+<label for="user_tmp_file">Picture</label>
+</p>
+
+<p><label for="user_personality">Personality</label><br/>
+<%= text_area 'user', 'personality', "cols" => 60, "rows" => 5 %></p>
+
+
+<p><label for="user_note">Note</label><br/>
+<%= text_area 'user', 'note'  ,"cols" => 60, "rows" => 5 %></p>
+<!--[eoform:user]-->
+

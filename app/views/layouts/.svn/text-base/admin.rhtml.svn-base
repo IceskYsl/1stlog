@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.1sters.com/feed/index" />
+<link rel="alternate" type="application/atom+xml" title="Atom" href="http://www.1sters.com/feed/index" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.1sters.com/feed/index" />
+<title><%=title%> 管理系统 </title>
+   <%= stylesheet_link_tag "layouts", :media => "all" %>
+    <%= javascript_include_tag 'prototype'%>
+
+  <%= javascript_include_tag("tiny_mce/tiny_mce_gzip") %>
+  <%= javascript_include_tag "tiny_mce/tiny_mce" %>
+  
+
+    </head>
+  <body>
+    <div id="page">
+    <%= render(:partial => "shared/header") %>
+    
+      <div id="admin_sidebar">
+        <ul id="sidebar-items">
+          <li>
+            <h3>网站配置</h3>
+            <ul class="links"> 
+             <li><%=link_to "一般个性配置",:controller=>'admin/configuration',:action=>'index'%></li>
+              <li><%=link_to "显示条目配置",:controller=>'admin/configuration',:action=>'config_num'%></li>
+             <li><%=link_to "选择显示模块",:controller=>'admin/configuration',:action=>'config_show'%></li>
+              <li><%=link_to "个人模板选择",:controller=>'admin/configuration',:action=>'config_theme'%></li>
+            </ul>
+          </li>
+        
+          <li>
+            <h3>内容管理</h3>
+            <ul class="links"> 
+              <li><%=link_to "所有文章管理",:controller=>'admin/topic',:action=>'index'%></li>
+              <li><%=link_to "所有评论管理",:controller=>'admin/comment',:action=>'index'%></li>
+              <li><%=link_to "网站用户管理",:controller=>'admin/user',:action=>'index'%></li>
+              <li><%=link_to "友情链接管理",:controller=>'admin/link',:action=>'index'%></li>
+            </ul>
+          </li>
+          
+          <li>
+            <h3>工具面板</h3>
+            <ul class="links">
+              <li><%=link_to "大分类类",:controller=>'admin/type',:action=>'index'%></li>
+              <li><%=link_to "标签管理",:controller=>'admin/tag',:action=>'index'%></li>
+              <li><%=link_to "分类管理",:controller=>'admin/category',:action=>'index'%></li>
+              <li><%=link_to "用户组",:controller=>'admin/usergroup',:action=>'index'%></li>
+            </ul>
+          </li>
+          
+          <li>
+            <h3>个人设置</h3>
+            <ul class="links">
+              <li><%=link_to "个人设置",:controller=>'admin/profile',:action=>'index'%></li>
+              <li><%=link_to "修改密码",:controller=>'admin/profile',:action=>'password'%></li>
+              <li><%=link_to "退出登录",:controller=>'/index',:action=>'logout'%></li>
+            </ul>
+          </li>
+          
+
+        </ul>
+      </div>
+
+      <div id="admin_content">
+
+
+        <div id="about">
+
+            <% if flash[:notice] -%>
+            <div id ="notice"> <%= flash[:notice] %> </div>
+            <% end -%>
+            <%= @content_for_layout %>
+        </div>
+        
+
+      </div>
+      
+<%= render(:partial => "shared/footer") %>
+
+    </div>
+  </body>
+</html>

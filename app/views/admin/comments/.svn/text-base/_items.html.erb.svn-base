@@ -1,0 +1,46 @@
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="rightmainbody">
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+        
+        <tr class="tdbheader">
+          <td nowrap width="6%">状态</td>
+          <td nowrap width="10%">作者</td>
+          
+          <td nowrap width="20%">联系方法</td>
+          <td nowrap width="10%">IP</td>
+          <td nowrap width="10%">时间</td>
+          <td nowrap width="34%">内容</td>
+          <td nowrap width="2%"><input name="chkall" value="on" type="checkbox" onClick="checkall(this.form)"></td>
+        </tr>
+<%@comments.each do |c|%>
+        <tr class="tablecell">
+          
+          <td nowrap>XX</td>
+          <td nowrap><%=c.name%></td>
+          <td nowrap><font color="#FF0000"><%=c.email%></font></td>
+          <td nowrap><%=c.remote_ip%></td>
+          <td nowrap><%=c.created_at.to_s(:db)%></td>
+          <td nowrap><%=c.body%></td>
+          
+          <td nowrap><input type="checkbox" name="comments[]" value=<%="#{c.id}"%></td>
+        </tr>
+<%end%>
+        
+  
+        <tr class="tablecell">
+          <td colspan="8" nowrap="nowrap"><div class="records">页:<%= @comments.current_page%>/<%=@comments.page_count %>,记录:<%=@comments.total_entries %></div>
+      
+          <div class="multipage"><%= will_paginate @comments %></div></td>
+    
+        </tr>
+        
+        <tr>
+          <td class="tablebottom" colspan="9"></td>
+        </tr>
+      </table>
+    </td>
+    
+  </tr>
+  
+</table>

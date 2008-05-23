@@ -1,0 +1,13 @@
+<div class="box">
+  <div class="alert">提示: 重建数据和标签整理可以提高数据准确率</div>
+  <div class="alertmsg">由于文章关联数据较多,当您进行批量操作或者改变文章状态后,建议您花1-2分钟重建相关数据和整理标签,可以提高数据的准确率.</div>
+</div>
+
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+  <tr><td class="rightmainbody">
+  <%=render(:partial => "items")%>  
+  <%=render(:partial => "actions")%>
+    </td>
+  </tr>
+</table>

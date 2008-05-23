@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/74/trunk/app/views/admin/configurations
+END
+base.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/66/trunk/app/views/admin/configurations/base.rhtml
+END
+editer.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/66/trunk/app/views/admin/configurations/editer.rhtml
+END
+desc.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/66/trunk/app/views/admin/configurations/desc.rhtml
+END
+_content.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/74/trunk/app/views/admin/configurations/_content.html.erb
+END
+config_num.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/66/trunk/app/views/admin/configurations/config_num.rhtml
+END
+config_show.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/66/trunk/app/views/admin/configurations/config_show.rhtml
+END
+_silder.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/66/trunk/app/views/admin/configurations/_silder.html.erb
+END
+config_theme.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/66/trunk/app/views/admin/configurations/config_theme.rhtml
+END
+index.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/66/trunk/app/views/admin/configurations/index.rhtml
+END

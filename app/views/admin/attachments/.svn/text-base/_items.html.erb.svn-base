@@ -1,0 +1,39 @@
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="rightmainbody">
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+        
+        <tr class="tdbheader">
+          <td nowrap width="16%">名称</td>
+          <td nowrap width="10%">分类</td>
+          
+          <td nowrap width="20%">地址</td>
+          <td nowrap width="40%">描述</td>
+        </tr>
+        <%@attachments.each do |attachment|%>
+          <tr class="tablecell">
+          
+            <td nowrap><%=attachment.filename%></td>
+            <td nowrap><%=attachment.topic.title%></td>
+            <td nowrap><%=attachment.path%></td>
+              <td nowrap><%=attachment.description%></td>
+            </tr>
+          <%end%>
+                
+          
+          <tr class="tablecell">
+            <td colspan="8" nowrap="nowrap"><div class="records">页:<%= @attachments.current_page%>/<%=@attachments.page_count %>,记录:<%=@attachments.total_entries %></div>
+            
+            <div class="multipage"><%= will_paginate @attachments %></div></td>
+          
+          </tr>
+        
+          <tr>
+            <td class="tablebottom" colspan="9"></td>
+          </tr>
+        </table>
+      </td>
+    
+    </tr>
+  
+  </table>

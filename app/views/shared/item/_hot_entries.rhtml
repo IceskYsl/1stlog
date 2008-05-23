@@ -1,0 +1,10 @@
+  <% if $cached_configs['show_hot_entries'].to_i == 1%>
+	
+	<li><h2><%=item_title ||= "Hot Entries"%></h2>
+	<ul>	
+		<% @hot_topics.each do |topic| %> 
+		<li><%=link_to h(topic.title),{:controller=>"topics",:action=>"show",:id=>topic.id},{:title=>topic.title}%></li>
+		<% end %>
+	</ul>
+	</li>
+<% end %>

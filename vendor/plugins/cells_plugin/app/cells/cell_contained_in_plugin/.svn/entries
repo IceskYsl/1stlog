@@ -1,0 +1,52 @@
+8
+
+dir
+74
+https://1stlog.googlecode.com/svn/trunk/vendor/plugins/cells_plugin/app/cells/cell_contained_in_plugin
+https://1stlog.googlecode.com/svn
+
+
+
+2008-04-22T01:27:37.349214Z
+66
+iceskysl
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+01612b04-d432-0410-ac2e-49b30577d389
+
+some_view.rhtml
+file
+
+
+
+
+2008-05-23T16:35:08.000000Z
+37c108604aa4775f7ca7c1a5f1ae2d31
+2008-04-22T01:27:37.349214Z
+66
+iceskysl
+
+_partial_contained_in_plugin.rhtml
+file
+
+
+
+
+2008-05-23T16:35:08.000000Z
+27a754ea52288a0fb9b401d5e51b291f
+2008-04-22T01:27:37.349214Z
+66
+iceskysl
+

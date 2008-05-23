@@ -1,0 +1,9 @@
+	
+	<li><h2>Search</h2>
+	<div id="search">
+		<%= form_remote_tag(:update => "content",:url => { :controller=>"index",:action => :search},:complete => "new Effect.Highlight('content')") %>	  
+		<%=text_field_tag("keys",{},{:class=>"searchfield",:id=>"s",:title=>"Enter keyword to search" })-%>
+		<%=submit_tag("Find", {:class=>"searchsubmit",:title=>"searchsubmit"}) %>
+		<%= end_form_tag %>
+	</div>
+	</li>

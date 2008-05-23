@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/66/trunk/vendor/plugins/cells_plugin/test/views
+END
+state_with_link_to.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/66/trunk/vendor/plugins/cells_plugin/test/views/state_with_link_to.rhtml
+END
+view_with_render_cell_invocation.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/66/trunk/vendor/plugins/cells_plugin/test/views/view_with_render_cell_invocation.rhtml
+END
+broken_partial.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/66/trunk/vendor/plugins/cells_plugin/test/views/broken_partial.rhtml
+END
+another_rendering_state.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/66/trunk/vendor/plugins/cells_plugin/test/views/another_rendering_state.rhtml
+END
+state_with_not_included_helper_method.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/66/trunk/vendor/plugins/cells_plugin/test/views/state_with_not_included_helper_method.rhtml
+END
+state_with_helper_method_invocation.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/66/trunk/vendor/plugins/cells_plugin/test/views/state_with_helper_method_invocation.rhtml
+END
+state_with_helper_invocation.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/66/trunk/vendor/plugins/cells_plugin/test/views/state_with_helper_invocation.rhtml
+END
+_test_list.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/66/trunk/vendor/plugins/cells_plugin/test/views/_test_list.rhtml
+END
+state_with_automatic_helper_invocation.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/66/trunk/vendor/plugins/cells_plugin/test/views/state_with_automatic_helper_invocation.rhtml
+END
+a_cell_template_file.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/66/trunk/vendor/plugins/cells_plugin/test/views/a_cell_template_file.rhtml
+END
+a_cell_template.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/66/trunk/vendor/plugins/cells_plugin/test/views/a_cell_template.rhtml
+END
+setting_state.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/66/trunk/vendor/plugins/cells_plugin/test/views/setting_state.rhtml
+END
+rendering_state.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/66/trunk/vendor/plugins/cells_plugin/test/views/rendering_state.rhtml
+END
+view_with_cells_render_invocation.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/66/trunk/vendor/plugins/cells_plugin/test/views/view_with_cells_render_invocation.rhtml
+END
+just_one_view.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/66/trunk/vendor/plugins/cells_plugin/test/views/just_one_view.rhtml
+END
+reset_state.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/66/trunk/vendor/plugins/cells_plugin/test/views/reset_state.rhtml
+END

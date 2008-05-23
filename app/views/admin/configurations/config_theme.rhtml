@@ -1,0 +1,42 @@
+<h2>你有如下模板</h2>
+<%= error_messages_for 'user' %>
+<%= form_tag :action => 'selected_theme' %>
+<!--[form:user]-->
+<table width="100%"   cellspacing="4" cellpadding="4" border="0" align="center" bgcolor="#f0f0f0">
+<tbody>
+<tr BGCOLOR=#FFCC33>
+    <td width="5%" >Action</td> 
+    <td width="15%" >Name</td>
+    <td width="15%" >Author</td> 
+    <td>preview</td>   
+</tr>
+共有:<%=@theme_cache.size %>个模板<br/>
+
+<% for theme in @theme_cache  %>
+
+<% theme_name = File.basename(theme)%> 
+  <tr>
+  <td><%=radio_button_tag("theme", theme_name, checked = @app_theme.value.to_s == theme_name.to_s , options = {})%></td>
+  <td><%= link_to File.basename(theme),{},{:title=>File.new("#{theme}/about.theme").readlines }%></td>
+  <td><%= File.new("#{theme}/author.theme").readlines%></td>
+  <td>
+  <img  src=<%="/configuration/preview/#{File.basename(theme)}"%> alt="Icon" height="300" width="400" />
+  
+  
+
+
+<%=
+link_to(
+    "点击查看放大",
+    {:controller => "admin/configuration",:action => "preview",:theme =>"#{File.basename(theme)}"},{:popup => ['预览图', 'height=600,width=800']})
+ %>
+  </td>
+ </tr>
+<% end %>
+</tbody>
+</table>
+<!--[end form:user]-->
+<%= submit_tag 'Select!' %>
+
+
+

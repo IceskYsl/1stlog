@@ -1,0 +1,8 @@
+	<li><h2>ProfileOnYoutube</h2>
+	<ul>
+    age: <%=@profile.age.to_s%> <br/>
+    country: <%=@profile.country.to_s%><br/>
+    favorite_video_count: <%=@profile.favorite_video_count.to_s%><br/>
+    about_me: <%=@profile.about_me.to_s%><br/>
+	</ul>	
+	</li>

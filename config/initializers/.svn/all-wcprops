@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/71/trunk/config/initializers
+END
+inflections.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/66/trunk/config/initializers/inflections.rb
+END
+load_configs.rb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/71/trunk/config/initializers/load_configs.rb
+END
+mime_types.rb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/66/trunk/config/initializers/mime_types.rb
+END

@@ -1,0 +1,41 @@
+<div id="cp_main">
+  <%= error_messages_for 'user' %>
+  <%= form_tag :action => 'update' %>
+
+  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tbody><tr>
+        <td class="rightmainbody">
+          <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+            
+            <tbody>
+              <tr class="tdbheader">
+                <td colspan="2">系统设置</td>
+              </tr>
+              
+              <%@configurations.each do |config|%>
+                <tr class="tablecell">
+                  <td width="50%">
+                    <b><%=config.title %></b><br/>
+                  <%=config.description %></td>
+                  <td><%= text_field_tag 'name', nil  ,{:value=>"#{config.value}",:size=>50, :class => 'formfield' }%></td>
+                </tr>
+              <%end%>
+                          
+              
+              
+              <tr class="tablecell">
+                <td colspan="2" align="center">
+                  
+                  <%= submit_tag '提交!', :class=>"formbutton"  %>
+                  <input value="重置" class="formbutton" type="reset">
+                </td>
+              </tr>
+              <tr>
+                <td class="tablebottom" colspan="2"></td>
+              </tr>
+        </tbody></table></td>
+      </tr>
+      
+  </tbody></table>
+  
+</div>

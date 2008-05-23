@@ -1,0 +1,43 @@
+	
+	<li><h2>Search 1ster</h2>
+
+<!-- SiteSearch Google -->
+<form method="get" action="http://www.google.cn/custom" target="google_window">
+<table border="0" bgcolor="#ffffff">
+<tr><td nowrap="nowrap" valign="top" align="left" height="32">
+
+</td>
+<td nowrap="nowrap">
+<input type="hidden" name="domains" value="1ster.cn"></input>
+<label for="sbi" style="display: none">输入您的搜索字词</label>
+<input type="text" name="q" size="18" maxlength="255" value="" id="sbi"></input>
+</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td nowrap="nowrap">
+<table>
+<tr>
+<td>
+<input type="radio" name="sitesearch" value="" id="ss0"></input>
+<label for="ss0" title="搜索网络"><font size="-1" color="#000000">Web</font></label></td>
+<td>
+<input type="radio" name="sitesearch" value="1ster.cn" checked id="ss1"></input>
+<label for="ss1" title="搜索 1ster.cn"><font size="-1" color="#000000">1ster.cn</font></label></td>
+</tr>
+</table>
+<label for="sbb" style="display: none">提交搜索表单</label>
+<input type="submit" name="sa" value="Google 搜索" id="sbb"></input>
+<input type="hidden" name="client" value="pub-2948330259558327"></input>
+<input type="hidden" name="forid" value="1"></input>
+<input type="hidden" name="channel" value="3367778389"></input>
+<input type="hidden" name="ie" value="UTF-8"></input>
+<input type="hidden" name="oe" value="UTF-8"></input>
+<input type="hidden" name="flav" value="0002"></input>
+<input type="hidden" name="sig" value="V6x9vSwbr9XCj7BC"></input>
+<input type="hidden" name="cof" value="GALT:#008000;GL:1;DIV:#FFFFFF;VLC:663399;AH:center;BGC:FFFFFF;LBGC:336699;ALC:0000FF;LC:0000FF;T:000000;GFNT:0000FF;GIMP:0000FF;LH:56;LW:100;L:http://www.1sters.com/images/logo.png;S:http://www.1sters.com/;LP:1;FORID:1"></input>
+<input type="hidden" name="hl" value="zh_CN"></input>
+</td></tr></table>
+</form>
+<!-- SiteSearch Google -->
+
+	</li>

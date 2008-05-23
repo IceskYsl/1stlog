@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/66/trunk/vendor/plugins/cells_plugin
+END
+Rakefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/66/trunk/vendor/plugins/cells_plugin/Rakefile
+END
+init.rb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/66/trunk/vendor/plugins/cells_plugin/init.rb
+END
+CHANGES
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/66/trunk/vendor/plugins/cells_plugin/CHANGES
+END
+install.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/66/trunk/vendor/plugins/cells_plugin/install.rb
+END
+about.yml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/66/trunk/vendor/plugins/cells_plugin/about.yml
+END
+init_engine.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/66/trunk/vendor/plugins/cells_plugin/init_engine.rb
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/66/trunk/vendor/plugins/cells_plugin/README
+END

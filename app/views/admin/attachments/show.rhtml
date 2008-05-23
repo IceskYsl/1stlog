@@ -1,0 +1,8 @@
+<% for column in Attachment.content_columns %>
+<p>
+  <b><%= column.human_name %>:</b> <%=h @attachment.send(column.name) %>
+</p>
+<% end %>
+
+<%= link_to 'Edit', :action => 'edit', :id => @attachment %> |
+<%= link_to 'Back', :action => 'list' %>

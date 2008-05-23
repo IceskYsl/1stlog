@@ -1,0 +1,16 @@
+<% @topics.each do |topic| %>
+
+      <% if @lastest_topic.id == topic.id%> 	
+            <%= render(:partial => "shared/latest_entry",:object=>topic) %>
+      <% else%>
+            <%= render(:partial => "shared/common_entry",:object=>topic) %>
+      <% end %>
+    
+<% end %>
+
+
+<div style="">
+  <span class=”pagelink”>
+    <%= will_paginate @topics %>
+  </span>
+</div>		

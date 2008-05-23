@@ -1,0 +1,8 @@
+<%#
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+%>
+<h2>服务器环境变量</h2>
+<%ENV.to_hash.each do |k,v|%>
+        <%=k + "=" +v%><br />
+  <%end%>

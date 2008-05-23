@@ -1,0 +1,26 @@
+<% if $cached_configs['show_links'].to_i == 1%>﻿	
+  <li id="linkcat-9" class="linkcat">
+    <h2><%=item_title ||= "Blogroll"%></h2>
+    <ul>
+    
+      <% @plinks.each do |plink| %> 
+        <li id="subcategories">
+          <h3><%= plink.title -%></h3>
+          <ul class='children'>
+            <% @links.each do |links| %>
+              <% if links %>             
+                      <% links.each do |t| %> 
+                         <% if plink.id == t.parent_id %>
+                    <li>
+                      <%=link_to h(t.title),t.weburl,{:title=>t.description,:popup => true }-%>
+                    </li>
+                  <% end %>		
+               <% end %>		
+      <% end %>
+    <% end %>
+          </ul>
+        </li>
+      <% end %>
+    </ul>
+  </li>
+<% end %>

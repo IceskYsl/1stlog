@@ -1,0 +1,12 @@
+<% if $cached_configs['show_authors'].to_i == 1%>﻿
+	<li><h2><%=item_title ||= "Authors"  %></h2>
+	<ul>
+		<p>
+		<%=$cached_configs['about_authors']%>
+		<% @users.each do |user| %> 
+	   <li><b><%=user.nickname%> </b></li>
+		<% end %>
+		</p>
+	</ul>
+	</li>
+<% end %>	

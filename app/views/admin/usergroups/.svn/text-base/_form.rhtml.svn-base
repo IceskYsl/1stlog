@@ -1,0 +1,10 @@
+<%= error_messages_for 'user_group' %>
+
+<!--[form:user_group]-->
+<p><label for="user_group_title">Title</label><br/>
+<%= text_field 'user_group', 'title'  %></p>
+
+<p><label for="user_group_description">Description</label><br/>
+<%= text_field 'user_group', 'description'  %></p>
+<!--[eoform:user_group]-->
+

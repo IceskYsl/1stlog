@@ -1,0 +1,133 @@
+      body {
+        margin: 0;
+        margin-bottom: 25px;
+        padding: 0;
+        background-color: #f0f0f0;
+        font-family: "Lucida Grande", "Bitstream Vera Sans", "Verdana";
+        font-size: 13px;
+        color: #333;
+      }
+      
+
+      
+       h1 , h2 {
+        padding: 8px;
+        margin: 2px 2px 10px;
+        background-color: #f0f0f0;
+        font-size: 18px;
+        color: #000;
+      }
+      
+      h3 {
+        margin: 5px ;
+        margin-top: 15px ;
+      }
+      
+      a  {color: #03c}
+      a:hover {
+        background-color: #03c;
+        color: white;
+        text-decoration: none;
+      }
+      
+      
+      #page {
+        border: 1px solid #ccc;
+        background-color: #f0f0f0;
+        width: 950px;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      #content {
+        float: left;
+        background-color: white;
+        border: 1px solid #aaa;
+        border-top: none;
+        padding: 25px;
+        width: 630px;
+      }
+      
+      #sidebar {
+        float: right;
+        width: 255px;
+      }
+      
+      
+    #admin_content {
+        float: left;
+        background-color: white;
+        border: 1px solid #aaa;
+        border-top: none;
+        padding: 10px;
+        width: 730px;
+      }
+      
+      #admin_sidebar {
+        background-color: white;
+        padding: 15px;
+        float: right;
+        width: 155px;
+      }
+
+      #footer {
+        background-color: #ccc;
+        clear: both;
+        padding: 1px 0;
+        text-align:canter;
+      }
+      
+      #header {
+       border: 1px solid #aaa;
+        background-image: url("images/logo.png");
+        background-repeat: no-repeat;
+        background-position: top left;
+        padding:12px;
+      }
+
+      
+      
+      #about  {
+        border: solid 1px #CCCCCC;
+        padding:8px;
+        margin: 0;
+        margin-bottom: 10px;
+        font-size: 14px;
+      }
+      
+      
+      #admin_sidebar ul , #sidebar ul {
+        margin-left: 5px;
+        padding-left: 5px;
+      }
+      #admin_sidebar ul h3 , #sidebar ul h3 {
+
+        font-size: 16px;
+        padding-bottom: 2px;
+        border-bottom: 1px solid #ccc;
+      }
+      #admin_sidebar li,  #sidebar li {
+        list-style-type: none;
+      }
+       #admin_sidebar ul.links li  , #sidebar ul.links li {
+        margin-bottom: 5px;
+      }
+      
+   pre{
+	padding: 1em;
+	border: solid 1px #CCCCCC;
+	margin: 0 1em;
+    }
+    p{
+    padding: 4px;
+    margin: 0 ;
+    }
+    #notice {
+	background: #FFF6BF;
+	border-top: 2px solid #FFD324;
+	border-bottom: 2px solid #FFD324;
+	text-align: center;
+	margin: 10px auto;
+	padding: 5px 20px;
+	}

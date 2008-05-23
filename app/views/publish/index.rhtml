@@ -1,0 +1,57 @@
+<h2>提交文章</h2>
+<%= form_tag :action => 'create_by_rss' %>
+<table align ="center"  border="0.5">
+<br/>
+
+<p>
+>>
+<%= text_field_tag("uri",nil,{:size => 55})%>
+<label for="rss_url">RSS URL</label>
+</p>
+
+<p>   
+>>
+<%= text_field 'topic', 'title'  ,"size" => 45  %>
+<label for="topic_title">Title</label>          
+
+           <%= collection_select(
+                 :topic, :nature_id, Nature.find(:all), :id, :title) %>
+<label for="topic_title">Nature</label>
+</p>
+
+
+
+
+<p>
+<label for="topic_keys">Keys:</label>
+<%= text_field 'topic', 'keys',"size" => 15  %>
+Tag:
+<select id="topic_tag_id" name="topic[tag_id]" > 
+<option value="0">-New Tag-</option>
+<%=options_from_collection_for_select (@tags, "id", "title",@topic.tag_id) -%> 
+</select>
+<%= text_field_tag  'tag_title' ,nil,"size" => 10 %>
+</p>
+
+<p>
+<label for="topic_title">Type:</label>
+           <%= collection_select(
+                 :topic, :type_id, Type.find(:all), :id, :title) -%>
+           Category:      
+           <%= related_collection_select(:topic, :category_id, [:topic, :type_id], 
+                 Category.find(:all), :id, :title,:type_id) -%>   
+</p> 
+
+<p>
+<%= textile_editor 'topic', 'body' , "cols" => 80, "rows" => 15%><br/>
+<label for="topic_body">*Body(填写您推荐这篇文章的理由或者读后感)</label>
+</p>
+
+<p>
+<input name="submit" type="image" id="submit" class="input-submit" tabindex="5" value="Publish!" title="Please review your comment before submitting" alt="Post a comment" src="http://themes.wordpress.net/testrun/wp-content/themes/871/images/post-a-comment.png" />
+</p>
+
+
+</table>
+<%= textile_editor_initialize -%>
+<%= end_form_tag %>

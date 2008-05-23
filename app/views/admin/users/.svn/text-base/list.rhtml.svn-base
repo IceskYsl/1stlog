@@ -1,0 +1,28 @@
+﻿<div class="mainbody">
+  <div class="navlink"><a href="/admin/index">控制面版</a> » 链接管理</div>
+</div>
+
+
+
+<div class="mainbody">
+  <table border="0"  cellspacing="0" cellpadding="0" style="width:100%;">
+    
+    <tr>
+      <td valign="top" style="width:150px;">
+        <%=render(:partial => "slider")%>   
+      </td>
+      
+      <td valign="top" style="width:20px;"></td>
+      <td valign="top">
+        <form action="admincp.php?job=comment" method="POST" name="form">
+         <%=render(:partial => "items")%>  
+        </form>
+      </td>
+    </tr>
+  </table>
+</div>
+
+
+
+
+

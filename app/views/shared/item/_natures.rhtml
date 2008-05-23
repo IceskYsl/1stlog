@@ -1,0 +1,15 @@
+
+<!--
+         文章性质
+         -->
+         
+ <% if $cached_configs['show_natures'].to_i == 1%>
+  <li>
+    <h2><%=item_title ||= "Nature"%></h2>
+    <ul>
+      <% @natures.each do |nature| %> 
+        <li><%=link_to "#{nature.title}(#{nature.topics_count})-#{nature.description}",nature_path(nature.id)%></li>
+        <% end %>
+      </ul>	
+    </li>
+  <% end %>

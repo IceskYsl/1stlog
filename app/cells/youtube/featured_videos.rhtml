@@ -1,0 +1,10 @@
+	<li><h2>Featured_videos</h2>
+	<ul>
+		<% @featured_videos.each do |video| %> 
+		<li>
+		<%=video.embed_html(width = 200, height = 200)%>
+		<%=link_to video.title,video.url%>
+		</li>
+		<% end %>
+	</ul>	
+	</li>

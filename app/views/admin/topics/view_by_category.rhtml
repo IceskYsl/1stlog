@@ -1,0 +1,96 @@
+<div class="box">
+<div class="alert">提示: 重建数据和标签整理可以提高数据准确率</div>
+<div class="alertmsg">由于文章关联数据较多,当您进行批量操作或者改变文章状态后,
+建议您花1-2分钟重建相关数据和整理标签,可以提高数据的准确率.</div>
+</div>
+
+
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tbody><tr><td class="rightmainbody"><table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+    <tbody><tr class="tdbheader">
+      <td width="45%">标题</td>
+      <td nowrap="nowrap" width="10%">分类</td>
+      <td nowrap="nowrap" width="6%">浏览</td>
+
+      <td nowrap="nowrap" width="5%">评论</td>
+      <td nowrap="nowrap" width="5%">作者</td>
+      <td nowrap="nowrap" width="15%">时间</td>
+      <td nowrap="nowrap" width="12%">操作</td>
+      <td nowrap="nowrap" width="2%"><input name="chkall" value="on" onclick="checkall(this.form)" type="checkbox"></td>
+    </tr>
+
+
+
+<% for topic in @topics %>
+    <tr class="tablecell">
+    <td>
+    <% if topic.istop.to_i == 1 %>
+    <%=link_to "<font color=\"#FF0000\">置顶</font>",{ :action => 'notop', :id => topic }%>
+    <% end %>
+    <% if topic.visible.to_i == 1 %>
+    <%=link_to "<font color=\"#FF0000\">隐藏</font>",{ :action => 'notop', :id => topic }%>
+    <% else %>
+    <%=link_to "<font color=\"#009933\"> 显示</font>",{ :action => 'notop', :id => topic }%>
+    <% end %>
+    <%= link_to "#{topic.title}",{:controller => "topic", :action => "view",:id=>topic.id},{:title=>topic.body}%>
+</td>
+      <td nowrap="nowrap">
+      <%=link_to_remote (
+			  topic.category.title, 
+			  {
+			  :update => "cp_main",
+			  :url => {:controller=>"admin/topic",
+			  :action => "view_by_category",:c_id=>topic.category_id},
+			  :complete => "new Effect.Highlight('cp_main')"
+			  },{:class=>"link_item"})
+			   %></td>
+      <td nowrap="nowrap"><%=topic.views_count%></td>
+      <td nowrap="nowrap"><%=topic.comments_count%></td>
+      <td nowrap="nowrap">
+      <%=topic.user.nickname%></td>
+
+      <td nowrap="nowrap"><%=topic.created_at.to_date%></td>
+      <td nowrap="nowrap"><a href="admincp.php?job=comment&amp;action=tbsendlog&amp;articleid=32">发送</a> - <%= link_to '删除', { :action => 'destroy', :id => topic }, :confirm => 'Are you sure?', :method => :post %></td>
+      <td nowrap="nowrap"><input name="article[]" value="32" type="checkbox"></td>
+    </tr>
+<% end %>
+
+        <tr class="tablecell">
+          <td colspan="8" nowrap="nowrap"><div class="records">记录:32</div>
+          <div class="multipage">
+            <%= link_to 'Previous page', { :page => @topic_pages.current.previous } if @topic_pages.current.previous %>
+            <%= link_to 'Next page', { :page => @topic_pages.current.next } if @topic_pages.current.next %> 
+          </div></td>
+        </tr>
+
+    <tr>
+      <td class="tablebottom" colspan="8"></td>
+
+    </tr>
+      </tbody></table></td>
+    </tr>
+  </tbody></table>
+  
+<table align="center" border="0" cellpadding="0" cellspacing="0" height="40" width="100%">
+  <tbody><tr>
+    <td align="right">
+      <select name="do">
+        <option value="">= 管理操作 =</option>
+
+        <option value="stick">置顶</option>
+        <option value="unstick">取消置顶</option>
+        <option value="hidden">设置隐藏</option>
+        <option value="display">设置可见</option>
+        <option value="delete">删除</option>
+        <option value="move">移动</option>
+
+      </select>
+      <input name="submit" id="submit" value="确定" class="formbutton" type="submit"><input name="action" value="domore" type="hidden"></td>
+  </tr>
+</tbody></table>
+
+
+
+

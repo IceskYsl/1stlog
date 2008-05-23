@@ -1,0 +1,12 @@
+
+<div class="tableborder">
+  <div class="tableheader">插件管理</div>
+  <div class="leftmenubody">
+    <div class="leftmenuitem">&#8226; <%=link_to "添加插件",new_admin_plugin_path%></div>
+    <div class="leftmenuitem">&#8226; <%=link_to "插件管理",admin_plugins_path%> </div>
+    
+
+  </div>
+</div>
+
+ 

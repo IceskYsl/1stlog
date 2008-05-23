@@ -1,0 +1,29 @@
+
+﻿<div class="mainbody">
+  <div class="navlink"><a href="/admin/index">控制面版</a> » 评论管理</div>
+</div>
+
+
+
+<div class="mainbody">
+  <p class="p_nav">
+    [ 查看评论: <%=link_to "已隐藏",list_admin_comments_path(:visible=>0)%> | <%=link_to "已显示",list_admin_comments_path(:visible=>1)%> ] 
+    [ 查看引用: <a href="admincp.php?job=comment&action=tblist&kind=display&articleid=0">已显示</a> | <a href="admincp.php?job=comment&action=tblist&kind=hidden&articleid=0">已隐藏</a> ]
+  </p>
+  <table border="0"  cellspacing="0" cellpadding="0" style="width:100%;">
+    
+    <tr>
+      <td valign="top" style="width:150px;">
+        <%=render(:partial => "slider")%>   
+      </td>
+      
+      <td valign="top" style="width:20px;"></td>
+      <td valign="top">
+        <form action="admincp.php?job=comment" method="POST" name="form">
+         <%=render(:partial => "items")%>  
+         <%=render(:partial => "actions")%>
+        </form>
+      </td>
+    </tr>
+  </table>
+</div>

@@ -1,0 +1,27 @@
+<h1>用户组</h1>
+
+<table width="100%"   cellspacing="4" cellpadding="4" border="0" align="center" bgcolor="#f0f0f0">
+<tbody>
+<tr BGCOLOR=#FFCC33>
+    <td>Type</td>
+
+    <td>Action</td> 
+</tr>
+  
+<% for usergroup in @user_groups %>
+  <tr>
+    <td><%=link_to usergroup.title ,{:controller => "/admin/usergroup", :action => "view",:id=>usergroup},{:title=>usergroup.description}%>(<%=usergroup.users_count%>)</td>
+  
+    <td><%= link_to 'Show', :action => 'show', :id => usergroup %>
+    ,<%= link_to 'Edit', :action => 'edit', :id => usergroup %>
+    ,<%= link_to 'Destroy', { :action => 'destroy', :id => usergroup }, :confirm => 'Are you sure?', :method => :post %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to 'Previous page', { :page => @user_group_pages.current.previous } if @user_group_pages.current.previous %>
+<%= link_to 'Next page', { :page => @user_group_pages.current.next } if @user_group_pages.current.next %> 
+
+<br />
+
+<%= link_to 'New user_group', :action => 'new' %>

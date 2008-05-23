@@ -1,0 +1,11 @@
+  <% if $cached_configs['show_archives'].to_i == 1%>
+	<li><h2><%=item_title ||= "Archives"%></h2>
+	<ul>
+	<% @start.step(@last,-Time.days_in_month(@start.mon)) do |archive|%>	
+	<li>
+	<%=link_to archive.strftime("%B,%Y"),{:controller=>"archives",:action=>"show",:year=>archive.year,:month=>archive.mon},{} %>
+	</li>
+	<% end %>
+	</ul>
+	</li>
+<% end %>

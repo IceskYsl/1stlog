@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/66/trunk/app/helpers/admin
+END
+usergroups_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/66/trunk/app/helpers/admin/usergroups_helper.rb
+END
+links_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/66/trunk/app/helpers/admin/links_helper.rb
+END
+plugins_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/66/trunk/app/helpers/admin/plugins_helper.rb
+END
+themes_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/66/trunk/app/helpers/admin/themes_helper.rb
+END
+comments_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/66/trunk/app/helpers/admin/comments_helper.rb
+END
+categories_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/66/trunk/app/helpers/admin/categories_helper.rb
+END
+caches_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/66/trunk/app/helpers/admin/caches_helper.rb
+END
+configurations_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/66/trunk/app/helpers/admin/configurations_helper.rb
+END
+tags_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/66/trunk/app/helpers/admin/tags_helper.rb
+END
+profile_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/66/trunk/app/helpers/admin/profile_helper.rb
+END
+users_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/66/trunk/app/helpers/admin/users_helper.rb
+END
+topics_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/66/trunk/app/helpers/admin/topics_helper.rb
+END
+types_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/66/trunk/app/helpers/admin/types_helper.rb
+END
+index_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/66/trunk/app/helpers/admin/index_helper.rb
+END
+attachments_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/66/trunk/app/helpers/admin/attachments_helper.rb
+END

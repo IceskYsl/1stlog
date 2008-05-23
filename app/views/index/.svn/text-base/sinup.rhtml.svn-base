@@ -1,0 +1,5 @@
+<h2>New Administrator</h2>
+<% form_for(:user,@user, :url => {:action => "create"}, :html => { :multipart => false }) do |form| -%> 
+  <%= render :partial => 'form' %>
+  <%= submit_tag "Create" %>
+ <% end %>

@@ -1,0 +1,20 @@
+
+<div class="tableborder">
+  <div class="tableheader">评论管理</div>
+  <div class="leftmenubody">
+    <div class="leftmenuitem">&#8226; <%=link_to "评论管理",admin_comments_path%></div>
+    <div class="leftmenuitem">&#8226; <%=link_to '<font color="#FF0000">删除全部</font>',deleteall_admin_comments_path%> </div>
+    
+    <div class="leftmenuitem">&#8226; <%=link_to '显示全部',showall_admin_comments_path%> </div>
+    <div class="leftmenuitem">&#8226; <%=link_to '隐藏全部',hidenall_admin_comments_path%></div>
+  </div>
+</div>
+
+<div class="tableborder">
+  <div class="tableheader">引用管理</div>
+  
+  <div class="leftmenubody">
+    <div class="leftmenuitem">&#8226; <%=link_to "引用管理",admin_trcakbacks_path%></div>
+    <div class="leftmenuitem">&#8226; <%=link_to "清理引用",admin_trcakbacks_path%></div>
+  </div>
+</div>

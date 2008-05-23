@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/66/trunk/vendor/plugins/xss_terminate/lib
+END
+rails_sanitize.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/66/trunk/vendor/plugins/xss_terminate/lib/rails_sanitize.rb
+END
+xss_terminate.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/66/trunk/vendor/plugins/xss_terminate/lib/xss_terminate.rb
+END
+html5lib_sanitize.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/66/trunk/vendor/plugins/xss_terminate/lib/html5lib_sanitize.rb
+END

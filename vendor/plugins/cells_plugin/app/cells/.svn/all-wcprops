@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/66/trunk/vendor/plugins/cells_plugin/app/cells
+END
+unknown_cell.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/66/trunk/vendor/plugins/cells_plugin/app/cells/unknown_cell.rb
+END
+cells_test_one_cell.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/66/trunk/vendor/plugins/cells_plugin/app/cells/cells_test_one_cell.rb
+END
+simple_cell.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/66/trunk/vendor/plugins/cells_plugin/app/cells/simple_cell.rb
+END
+cells_test_two_cell.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/66/trunk/vendor/plugins/cells_plugin/app/cells/cells_test_two_cell.rb
+END

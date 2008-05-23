@@ -1,0 +1,9 @@
+<% if $cached_configs['show_hot_tags'].to_i == 1%>
+	<li><h2><%=item_title ||= "Tags"%></h2>
+	<ul>
+		<% @hot_tags.each do |tag| %> 
+		<%=link_to tag.title,{:controller=>"tag",:action=>"index",:id=>tag.id}%>
+		<% end %>
+	</ul>	
+	</li>
+<% end %>

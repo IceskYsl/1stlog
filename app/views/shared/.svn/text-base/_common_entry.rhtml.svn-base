@@ -1,0 +1,37 @@
+
+<div class="post">
+  <!-- 文章标题   -->
+  <p class="date"><span class="month">August </span><span class="day">28</span><span class="year">, 2007</span></p>
+  <h2 class="title">
+    <% if $cached_configs['show_natures'] == "1"%>
+      <% if common_entry.istop.to_i == 1 %>
+        <font color="#FF0000">置顶</font>
+      <% end %>
+      [<%=link_to h(common_entry.nature.title),{:controller=>"nature",:action=>"index",:id=>common_entry.nature_id},{:title=>common_entry.nature.description}%>]
+      <% else %>
+      <% end %>
+      <%=link_to h(common_entry.title),{:controller=>"topic",:action=>"index",:id=>common_entry.id},{:title=>common_entry.title}%>
+      </h2>	
+      <!-- 作者等信息   -->
+      <p class="byline"><small>
+          Posted on  <%=common_entry.created_at.to_s(:short)%>
+            in 
+            <%=link_to h(common_entry.category.title),{:controller=>"category",:action=>"index",:id=>common_entry.category_id},{:title=>common_entry.category.description}%> 
+              by <%=common_entry.user.nickname%>
+          </small></p>
+          <!-- 文章主题内容   -->
+          <div class="entry">
+            <p>
+              <%=simple_format  sanitize(truncate(strip_tags(common_entry.body), common_entry.snippetcounts*2))%>
+            </p>
+          </div>				
+          <p class="links">
+            <%=link_to "阅读全文",{:controller=>"topic",:action=>"index",:id=>common_entry.id},{:title=>"Continue reading...",:class=>"more"}%>(<%=common_entry.views_count%>)
+            &nbsp;&nbsp;&nbsp;
+            <%=link_to "添加评论",{:controller=>"topic",:action=>"index",:id=>common_entry.id},{:title=>"Comment on An image in a post",:class=>"comments"}%>(<%=common_entry.comments_count%>)
+            (
+            <a href="#" class="rss">RSS</a>
+            <a href="#" class="rss">TarckBack</a>
+            )
+          </p>
+        </div>

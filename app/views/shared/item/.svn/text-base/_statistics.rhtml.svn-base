@@ -1,0 +1,16 @@
+<% if $cached_configs['show_statistics'].to_i == 1%>﻿
+  <li id="comments">
+    <h2><%=item_title ||= "Statistics"%></h2>
+    <ul>
+      <li>Categories:<%=@categories_count%></li>
+      <li>Tags:<%=@tags_count%></li>
+      <li>Aticles:<%=@aticles_count%></li>
+      <li>Comments:<%=@comment_count%></li>
+      <li>TrackBacks:<%=@trackback_count%></li>
+      <li>Links:<%=@links_count%></li>	
+      <li>Authors:<%=@author_count%></li>
+      <li>Version: 1.0.0</li>
+      <li>Published: 2007.05.20</li>
+    </ul>
+  </li>
+<% end %>	

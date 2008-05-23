@@ -1,0 +1,70 @@
+8
+
+dir
+74
+https://1stlog.googlecode.com/svn/trunk/vendor/plugins/uuidtools-1.0.1
+https://1stlog.googlecode.com/svn
+
+
+
+2008-04-22T01:27:37.349214Z
+66
+iceskysl
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+01612b04-d432-0410-ac2e-49b30577d389
+
+test
+dir
+
+rakefile
+file
+
+
+
+
+2008-05-23T16:35:23.000000Z
+a5a771d0d3db5434d47fbef11f352674
+2008-04-22T01:27:37.349214Z
+66
+iceskysl
+
+lib
+dir
+
+CHANGELOG
+file
+
+
+
+
+2008-05-23T16:35:23.000000Z
+c523245c0500793c67caaf9c2a4fbe50
+2008-04-22T01:27:37.349214Z
+66
+iceskysl
+
+README
+file
+
+
+
+
+2008-05-23T16:35:23.000000Z
+3677ae4f98b4a66e7e04f57ee9bf878a
+2008-04-22T01:27:37.349214Z
+66
+iceskysl
+

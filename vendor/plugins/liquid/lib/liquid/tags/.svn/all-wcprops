@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/66/trunk/vendor/plugins/liquid/lib/liquid/tags
+END
+if.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/66/trunk/vendor/plugins/liquid/lib/liquid/tags/if.rb
+END
+cycle.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/66/trunk/vendor/plugins/liquid/lib/liquid/tags/cycle.rb
+END
+comment.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/66/trunk/vendor/plugins/liquid/lib/liquid/tags/comment.rb
+END
+capture.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/66/trunk/vendor/plugins/liquid/lib/liquid/tags/capture.rb
+END
+include.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/66/trunk/vendor/plugins/liquid/lib/liquid/tags/include.rb
+END
+assign.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/66/trunk/vendor/plugins/liquid/lib/liquid/tags/assign.rb
+END
+for.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/66/trunk/vendor/plugins/liquid/lib/liquid/tags/for.rb
+END
+ifchanged.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/66/trunk/vendor/plugins/liquid/lib/liquid/tags/ifchanged.rb
+END
+unless.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/66/trunk/vendor/plugins/liquid/lib/liquid/tags/unless.rb
+END
+case.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/66/trunk/vendor/plugins/liquid/lib/liquid/tags/case.rb
+END

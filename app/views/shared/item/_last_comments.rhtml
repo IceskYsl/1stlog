@@ -1,0 +1,9 @@
+<% if $cached_configs['show_last_comments'].to_i == 1%>
+  <li><h2><%=item_title ||= "Last Comments"%></h2>
+    <ul>	
+      <% @new_comments.each do |comment| %> 
+        <li><%=link_to sanitize(truncate(strip_tags(comment.body), 30)),{:controller=>"topic",:action=>"index",:id=>comment.topic_id},{:title=>comment.body}%>-<%=link_to h(comment.name),comment.website%></li>
+        <% end %>
+      </ul>
+    </li>
+  <% end %>

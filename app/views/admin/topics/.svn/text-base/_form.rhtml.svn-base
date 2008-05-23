@@ -1,0 +1,80 @@
+<%= error_messages_for 'topic' %>
+
+<!--[form:topic]-->
+<p>
+<label for="topic_title">Nature:</label>
+           <%= collection_select(
+                 :topic, :nature_id, Nature.find(:all), :id, :title) %>
+<label for="topic_title">Title:</label>
+<%= text_field 'topic', 'title'  ,"size" => 50  %></p>
+
+<p>
+
+                 
+<label for="topic_title">Type:</label>
+           <%= collection_select(
+                 :topic, :type_id, Type.find(:all), :id, :title) %>
+           Category:      
+           <%= related_collection_select(:topic, :category_id, [:topic, :type_id], 
+                 Category.find(:all), :id, :title,:type_id) %>   
+                 
+<label for="topic_title">Tag:</label>
+<select id="topic_tag_id" name="topic[tag_id]" > 
+<option value="0">-新建Tag-</option>
+<%=options_from_collection_for_select(@tags, "id", "title",@topic.tag_id) %> 
+</select>
+<%= text_field_tag  'tag_title' ,nil,"size" => 10 %>
+</p> 
+<p>
+<label for="topic_keys">Keys:</label>
+<%= text_field 'topic', 'keys'  %>
+</p>
+
+
+
+<%if $cached_configs['app_editor'] == "advanced_tiny_mce" or $cached_configs['app_editor'] == "simple_tiny_mce" %>
+<p><label for="topic_body">正文:</label><br/>
+<%= text_area 'topic', 'body' , :cols => "80", :rows => "15",
+    :class => 'tiny_mce' %>
+</p>
+<% else %>
+<p><label for="topic_body">Body:</label><br/>
+<%= textile_editor 'topic', 'body' , "cols" => 80, "rows" => "15" %>
+</p>
+<% end %>
+
+<p>
+
+<% if @attachment %>
+<label for="topic_body">已有附件:</label>
+<%= hidden_field 'topic', 'attachment_id'  ,:value=> @attachment.id  %>
+<%=h @attachment.filename  %>
+<% else %>
+<label for="topic_body">无附件:</label>
+
+</p>
+<% end %>
+
+<p>
+<%= check_box("topic", "istop")  %>
+<label for="topic_istop">Istop,</label>
+
+
+<%= check_box 'topic', 'visible'  %>
+<label for="topic_visible">Visible,</label>
+
+
+<%= check_box 'topic', 'closecomment'  %>
+<label for="topic_closecomment">Closecomment,</label>
+</p>
+
+
+
+<p>
+<%= check_box 'topic', 'showsnippet'  %>
+<label for="topic_showsnippet">Showsnippet:</label>
+<%= text_field 'topic', 'snippetcounts' ,"size" => 10   %>
+<label for="topic_snippetcounts">(Snippetcounts)</label>
+</p>
+<!--[eoform:topic]-->
+<%= textile_editor_initialize -%>

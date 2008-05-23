@@ -1,0 +1,73 @@
+8
+
+dir
+74
+https://1stlog.googlecode.com/svn/trunk/app/views/admin
+https://1stlog.googlecode.com/svn
+
+
+
+2008-05-23T04:38:05.065394Z
+74
+wujunchen
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+01612b04-d432-0410-ac2e-49b30577d389
+
+links
+dir
+
+plugins
+dir
+
+themes
+dir
+
+comments
+dir
+
+categories
+dir
+
+caches
+dir
+
+configurations
+dir
+
+tags
+dir
+
+profile
+dir
+
+users
+dir
+
+topics
+dir
+
+types
+dir
+
+index
+dir
+
+attachments
+dir
+
+usergroups
+dir
+

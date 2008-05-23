@@ -1,0 +1,14 @@
+<!-- begin footer -->
+
+
+<div id="footer">
+  <div id="footer_left_bg">
+    <p>
+      <%=$cached_configs['powered_by']%>
+     <%= year_range(2007) -%>
+    </p>
+  </div>
+</div>
+
+
+<!-- /footer -->

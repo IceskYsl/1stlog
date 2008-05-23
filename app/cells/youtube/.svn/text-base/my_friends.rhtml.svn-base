@@ -1,0 +1,9 @@
+	<li><h2>My_friends</h2>
+	<ul>
+		<% @friends.each do |friend| %> 
+		<li>
+		<%=friend.user(friend.video_upload_count)%>
+		</li>
+		<% end %>
+	</ul>	
+	</li>

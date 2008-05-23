@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/66/trunk/test/fixtures
+END
+links.yml
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/66/trunk/test/fixtures/links.yml
+END
+natures.yml
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/66/trunk/test/fixtures/natures.yml
+END
+topics.yml
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/66/trunk/test/fixtures/topics.yml
+END
+users.yml
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/66/trunk/test/fixtures/users.yml
+END
+types.yml
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/66/trunk/test/fixtures/types.yml
+END
+categories.yml
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/66/trunk/test/fixtures/categories.yml
+END
+comments.yml
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/66/trunk/test/fixtures/comments.yml
+END
+themes.yml
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/66/trunk/test/fixtures/themes.yml
+END
+track_backs.yml
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/66/trunk/test/fixtures/track_backs.yml
+END
+configurations.yml
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/66/trunk/test/fixtures/configurations.yml
+END
+statistics.yml
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/66/trunk/test/fixtures/statistics.yml
+END
+attachments.yml
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/66/trunk/test/fixtures/attachments.yml
+END
+user_groups.yml
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/66/trunk/test/fixtures/user_groups.yml
+END
+tags.yml
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/66/trunk/test/fixtures/tags.yml
+END

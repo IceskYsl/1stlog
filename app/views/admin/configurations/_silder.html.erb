@@ -1,0 +1,74 @@
+<div class="tableborder">
+  <div class="tableheader">系统设置</div>
+  <div class="leftmenubody">
+    
+    <div class="leftmenuitem">• <%=link_to "系统设置",:controller=>'admin/configurations',:action=>'index'%></div>
+    
+    <div class="leftmenuitem">•
+      <%=link_to_remote(
+                      "基本设置", 
+                      {
+                        :update => "cp_main",
+                             :url => {:controller=>"admin/configurations",
+                               :action => "base"},
+                             :complete => "new Effect.Highlight('cp_main')"
+                           },{:class=>"link_item"})
+                          %>
+    </div>
+    
+    <div class="leftmenuitem">•
+      <%=link_to_remote(
+                      "简介设置", 
+                      {
+                        :update => "cp_main",
+                             :url => {:controller=>"admin/configurations",
+                               :action => "desc"},
+                             :complete => "new Effect.Highlight('cp_main')"
+                           },{:class=>"link_item"})
+                          %>
+    </div>
+    
+    <div class="leftmenuitem">•
+      <%=link_to_remote(
+                      "显示设置", 
+                      {
+                        :update => "cp_main",
+                             :url => {:controller=>"admin/configurations",
+                               :action => "config_num"},
+                             :complete => "new Effect.Highlight('cp_main')"
+                           },{:class=>"link_item"})
+                          %>
+    </div>
+    
+    <div class="leftmenuitem">•
+      <%=link_to_remote(
+                      "侧栏设置", 
+                      {
+                        :update => "cp_main",
+                             :url => {:controller=>"admin/configurations",
+                               :action => "config_show"},
+                             :complete => "new Effect.Highlight('cp_main')"
+                           },{:class=>"link_item"})
+                          %>
+    </div>
+    
+    <div class="leftmenuitem">•
+      <%=link_to_remote(
+                      "编辑器设置", 
+                      {
+                        :update => "cp_main",
+                             :url => {:controller=>"admin/configurations",
+                               :action => "editer"},
+                             :complete => "new Effect.Highlight('cp_main')"
+                           },{:class=>"link_item"})
+                          %>
+    </div>
+    
+
+    
+    
+    
+    
+    
+  </div>
+</div>

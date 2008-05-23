@@ -1,0 +1,141 @@
+<table align="center" border="0" cellspacing="0" width="100%">
+  
+  <tbody>
+    <%= error_messages_for 'topic' %>
+    <tr class="tdbheader">
+      <td colspan="2">发表文章</td>
+    </tr>
+    
+    <tr class="tablecell">
+      <td>文章标题:</td>
+      <td>
+        <%= collection_select(
+                      :topic, :nature_id, Nature.find(:all), :id, :title) %>
+       <%= text_field 'topic', 'title'  ,{:size => 50,:class=>"formfield"}  %>
+      </td>
+    </tr>
+    <tr class="tablecell">
+      <td valign="top">选择分类:</td>
+      <td>
+        <%= collection_select(
+                  :topic, :type_id, Type.find(:all), :id, :title) %>
+    
+        <%= related_collection_select(:topic, :category_id, [:topic, :type_id], 
+                  Category.find(:all), :id, :title,:type_id) %> 
+      </td>
+    </tr>
+    <tr class="tablecell">
+      <td>标签:</td>
+      <td>
+        <select id="topic_tag_id" name="topic[tag_id]" > 
+          <option value="0">-新建标签-</option>
+          <%=options_from_collection_for_select(@tags, "id", "title",@topic.tag_id) %> 
+        </select>
+        <%= text_field_tag  'tag_title' ,nil,"size" => 40 %>
+        <br />
+      用“,”分隔多个关键字, 最多允许添加5个关键字, 每个关键字不能超过20个字符.</td>
+    </tr>
+    
+    <tr class="tablecell">
+      <td>关键字:</td>
+      <td>
+        <%= text_field 'topic', 'keys'  ,{:size => 40,:class=>"formfield"}  %>
+      </td>
+    </tr>
+    
+    
+    
+    
+    
+    <%if $cached_configs['editor_style'] == "TexTile"  %>
+      <tr class="tablecell">
+        <td valign="top"><label for="topic_body">文章内容:</label>
+        </td>
+        <td>
+          <%= textile_editor 'topic', 'body' , "cols" => 100, "rows" => "15" -%>
+        </td>
+      </tr>
+    <% else %>
+      <tr class="tablecell">
+        <td valign="top"><label for="topic_body">文章内容:</label>
+        </td>
+        <td>
+          <input type="hidden" name="topic[body]" value="">
+          <script type="text/javascript" charset="utf-8" src="../../editor/KindEditor.js"></script>
+          <script type="text/javascript">
+            var editor = new KindEditor("editor"); //创建编辑器对象
+            editor.uploadMode = false;
+            editor.safeMode = true;
+            editor.hiddenName = "topic[body]";
+            <%if $cached_configs['editor_style'].to_s == "FCK"%>
+              editor.skinPath = "../../../editor/skins/fck/";
+            <% elsif $cached_configs['editor_style'].to_s == "Tiny_MCE"%>
+              editor.skinPath = "../../../editor/skins/tiny/";
+            <% else%>
+              editor.skinPath = "../../../editor/skins/default/";
+            <% end %>
+            editor.iconPath = "../../../editor/icons/";
+            editor.imageAttachPath = "../../../editor/attached/";
+            <%if $cached_configs['editor_mode'].to_s == "简单模式"%>
+              editor.editorType = "simple";
+            <% else %>
+              editor.editorType = "full";
+          
+            <% end %>
+            editor.editorWidth = "600px";
+            editor.editorHeight = "400px";
+          
+            editor.show(); //显示
+            //提交时获得最终HTML代码的函数
+            function KindSubmit() {
+              editor.data();
+            }
+          </script>
+        </td>
+      </tr>
+    <% end %>
+    
+    
+    
+    
+    <tr class="tablecell">
+      <td>阅读密码:</td>
+      <td>
+        <%= text_field 'topic', 'readpassword' ,"size" => 20   %>
+      20个字符以内</td>
+    </tr>
+    
+    <tr class="tablecell">
+      
+      <td valign="top">更多选项:</td>
+      <td><%= check_box 'topic', 'closecomment'  %>
+        禁止访客发表评论<br />
+        
+               <%= check_box 'topic', 'showsnippet'  %>
+        首页截取<%= text_field 'topic', 'snippetcounts' ,"size" => 4   %>字显示<br />
+        
+                <%= check_box 'topic', 'visible'  %>
+        显示本文<br />
+        
+               <%= check_box("topic", "istop")  %>
+        置顶本文<br />
+      </td>
+    </tr>
+    
+    
+    
+    <tr class="tablecell">
+      <td>上传附件:</td>
+      <td>
+        <%= file_field  'topic', 'attachment_id'%>
+      2M以内</td>
+    </tr>
+    
+    
+    
+    
+    
+    <!--[form:topic]-->
+<%= textile_editor_initialize -%>
+  </tbody>
+</table>

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/66/trunk/app/views/layouts/admin
+END
+tag.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/66/trunk/app/views/layouts/admin/tag.rhtml
+END
+usergroup.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/66/trunk/app/views/layouts/admin/usergroup.rhtml
+END
+category.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/66/trunk/app/views/layouts/admin/category.rhtml
+END
+link.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/66/trunk/app/views/layouts/admin/link.rhtml
+END
+topic.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/66/trunk/app/views/layouts/admin/topic.rhtml
+END
+user.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/66/trunk/app/views/layouts/admin/user.rhtml
+END
+type.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/66/trunk/app/views/layouts/admin/type.rhtml
+END
+comment.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/66/trunk/app/views/layouts/admin/comment.rhtml
+END
+attachment.rhtml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/66/trunk/app/views/layouts/admin/attachment.rhtml
+END

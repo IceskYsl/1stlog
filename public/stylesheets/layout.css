@@ -1,0 +1,173 @@
+/*
+这里放布局结构框架
+*/
+
+body {
+    margin: 0;
+    margin-bottom: 25px;
+    padding: 0;
+    background-color: #fff;
+    /* font-family: "Lucida Grande", "Bitstream Vera Sans", "Verdana";*/
+    font-size: 13px;
+    color: #333;
+}
+
+
+
+h1 , h2 {
+    padding: 0;
+    margin: 2px 2px 2px;
+    color: #000;
+}
+
+h1{
+    font-size: 18px;
+}
+
+h2{
+    font-size: 16px;
+}
+
+h3 {
+    font-size: 14px;
+    margin: 1px ;
+}
+
+a  {color: #03c}
+ 
+
+#wapper {
+    width: 950px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*这里定义页首的格式,包含一个logo和一个menu */
+#header {
+    /*border: 1px solid #000;*/
+    padding:2px 1px;
+    margin-bottom: 10px;
+    background-color: #eee;
+}
+
+#header #logo{
+    padding:12px 10px;
+    
+}
+
+#menu {
+    clear: both;
+    background-color: #aaa;
+    height: 40px;
+}
+
+#menu ul {
+    height: 28px;
+    padding: 12px 0 0 20px;
+    margin: 0px 0;
+    list-style: none;
+}
+
+#menu li {
+    display: inline;
+}
+
+#menu a {
+    padding: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #36393D;
+}
+
+#menu a:hover {
+    height: 40px;
+    background-color: #FFF6BF;
+    text-decoration: underline;
+    padding:  20px;
+}
+
+#menu .current_page_item a {
+    color: #B42600;
+}
+
+/*End*/
+
+#page {
+    width: 950px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+#content {
+    float: left;
+    background-color: white;
+    
+    padding: 25px;
+    width: 632px;
+}
+
+#sidebar {
+    border-left: 1px dashed #000;
+    float: right;
+    width: 255px;
+}
+
+#sidebar ul{
+    padding: 2px 0 0 20px;
+    list-style: none ;
+}
+
+#sidebar ul li{
+    padding-bottom: 16px;
+}
+#sidebar ul li ul{
+    list-style: circle;
+    padding: 2px 0 0 20px;
+}
+
+#sidebar ul li ul li{
+    padding-bottom: 2px;
+}
+#sidebar ul li ul li ul{
+    list-style: square ;
+    padding: 2px 0 0 10px;
+}
+
+/*Fotter */
+#footer{
+    background-color: #ccc;
+    clear: both;
+    padding: 10px 0;
+    margin: 1px auto;
+}
+#footer p{
+    text-align:canter;
+    
+}
+
+
+
+
+
+
+pre{
+    padding: 1em;
+    border: solid 1px #CCCCCC;
+    margin: 0 1em;
+}
+p{
+    padding: 4px;
+    margin: 0 ;
+}
+#notice {
+    background: #FFF6BF;
+    border-top: 2px solid #FFD324;
+    border-bottom: 2px solid #FFD324;
+    text-align: center;
+    margin: 10px auto;
+    padding: 5px 20px;
+}

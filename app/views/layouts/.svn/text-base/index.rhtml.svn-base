@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+
+Design by IceskYsl@1sters!
+http://iceskysl.1sters.com
+Released for free under a Creative Commons Attribution 2.5 License
+
+Title      : Simple
+Version    : 1.0
+Released   : 20080420
+Description: A simple design suitable for blogs and small websites.
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>My 1stlog Here -Powered By 1stlog</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+<%= render(:partial => "shared/head") %>
+</head>
+<body>
+<!-- start header -->
+<div id="header">
+	<div id="logo">
+		<h1><a href="#">My 1stlog Here</a></h1>
+		<p><a href="http://www.freecsstemplates.org/">我只是个懂点安全对于互联网充满期待的程序员..</a></p>
+	</div>
+	<div id="search">
+		<form method="get" action="">
+			<fieldset>
+			<legend>Search My Blogs</legend>
+			<input type="text" name="s" id="search-text" size="15" value="" />
+			<input type="submit" id="search-submit" value="Search" />
+			</fieldset>
+		</form>
+	</div>
+	<div id="menu">
+		<ul>
+			<li class="current_page_item"><a href="#">首页</a></li>
+			<li><a href="#">博客</a></li>
+			<li><a href="#">照片</a></li>
+			<li><a href="#">关于我</a></li>
+			<li><a href="#">联系我</a></li>
+		</ul>
+	</div>
+</div>
+<!-- end header -->
+
+<!-- start page -->
+<div id="page">
+	<!-- start content -->
+	<div id="content">
+	
+	<% if flash[:notice] -%>
+	<div id ="notice"> <%= flash[:notice] %> </div>
+	<% end -%>
+	<%= @content_for_layout %>
+	
+	</div>
+	<!-- end content -->
+	
+	<!-- start sidebar -->
+	<div id="sidebar">
+		<ul>
+		<%= render(:partial => "shared/item/about",:object=>about, :locals => { :item_title => "关于我们" }) %>
+		<%=render :partial=>"shared/item/natures"%>
+		<%=render :partial=>"shared/item/types"%>
+		<%=render :partial=>"shared/item/hot_tags"%>
+		<%=render :partial=>"shared/item/archives"%>
+		<%=render :partial=>"shared/item/users", :locals => { :item_title => "关于作者" }%>
+		
+		<%=render :partial=>"shared/item/last_entries", :locals => { :item_title => "最新文章" }%>
+		
+
+
+
+
+			<li id="topics">
+				<h2>热门文章</h2>
+				<ul>
+					<li><a href="#">Nulla luctus eleifend purus</a></li>
+					<li><a href="#">Praesent scelerisque scelerisque erat</a></li>
+					<li><a href="#">Ut nonummy rutrum sem</a></li>
+					<li><a href="#">Pellentesque tempus quam quis nulla</a></li>
+					<li><a href="#">Fusce ultrices fringilla metus</a></li>
+					<li><a href="#">Praesent mattis condimentum nisl</a></li>
+					<li><a href="#">Praesent scelerisque scelerisque erat</a></li>
+					<li><a href="#">Nulla luctus eleifend purus</a></li>
+					<li><a href="#">Ut nonummy rutrum sem</a></li>
+					<li><a href="#">Pellentesque tempus quam quis nulla</a></li>
+				</ul>
+			</li>
+				
+
+			<%=render :partial=>"shared/item/statistics"%>
+			<%=render :partial=>"shared/item/metas"%>
+		</ul>
+	</div>
+	<!-- end sidebar -->
+	<div id="back2top" style="clear: both;"><a href="#page">Back to Top</a></div>
+</div>
+<!-- end page -->
+
+<!-- start footer -->
+<div id="footer">
+	<p class="legal">Copyright &copy;2007 <a href="http://www.1ster.cn/">1stlog</a> . All Rights Reserved.
+		&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+		Powered By <a href="http://iceskysl.1sters.com/">IceskYsl@1sters!</a> &nbsp;&nbsp;&bull;&nbsp;&nbsp;
+		Supported By <a href="http://www.1sters.com/">1STERS!</a>. </p>
+	<p class="links"> <a href="http://validator.w3.org/check/referer" class="xhtml" title="This page validates as XHTML">Valid <abbr title="eXtensible HyperText Markup Language">XHTML</abbr></a> &nbsp;&bull;&nbsp; <a href="http://jigsaw.w3.org/css-validator/check/referer" class="css" title="This page validates as CSS">Valid <abbr title="Cascading Style Sheets">CSS</abbr></a> </p>
+</div>
+<!-- end footer -->
+</body>
+</html>

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/66/trunk/app/views/shared/admin
+END
+_topbar.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/66/trunk/app/views/shared/admin/_topbar.html.erb
+END
+_copyright.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/66/trunk/app/views/shared/admin/_copyright.html.erb
+END
+_nav.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/66/trunk/app/views/shared/admin/_nav.html.erb
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/66/trunk/vendor/plugins/xss_terminate/test
+END
+setup_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/66/trunk/vendor/plugins/xss_terminate/test/setup_test.rb
+END
+schema.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/66/trunk/vendor/plugins/xss_terminate/test/schema.rb
+END
+xss_terminate_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/66/trunk/vendor/plugins/xss_terminate/test/xss_terminate_test.rb
+END

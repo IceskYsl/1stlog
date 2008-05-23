@@ -1,0 +1,28 @@
+<%= error_messages_for 'attachment' %>
+
+<!--[form:attachment]-->
+<p><label for="attachment_filename">Filename</label><br/>
+<%= text_field 'attachment', 'filename'  %></p>
+
+<p><label for="attachment_filetype">Filetype</label><br/>
+<%= text_field 'attachment', 'filetype'  %></p>
+
+<p><label for="attachment_filesize">Filesize</label><br/>
+<%= text_field 'attachment', 'filesize'  %></p>
+
+<p><label for="attachment_filepath">Filepath</label><br/>
+<%= text_field 'attachment', 'filepath'  %></p>
+
+<p><label for="attachment_downloads">Downloads</label><br/>
+<%= text_field 'attachment', 'downloads'  %></p>
+
+<p><label for="attachment_created_at">Created at</label><br/>
+<%= datetime_select 'attachment', 'created_at'  %></p>
+
+<p><label for="attachment_updated_at">Updated at</label><br/>
+<%= datetime_select 'attachment', 'updated_at'  %></p>
+
+<p><label for="attachment_isimage">Isimage</label><br/>
+<%= text_field 'attachment', 'isimage'  %></p>
+<!--[eoform:attachment]-->
+

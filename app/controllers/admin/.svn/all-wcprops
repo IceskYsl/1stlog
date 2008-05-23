@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/72/trunk/app/controllers/admin
+END
+attachments_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/72/trunk/app/controllers/admin/attachments_controller.rb
+END
+usergroups_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/72/trunk/app/controllers/admin/usergroups_controller.rb
+END
+links_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/72/trunk/app/controllers/admin/links_controller.rb
+END
+plugins_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/66/trunk/app/controllers/admin/plugins_controller.rb
+END
+themes_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/66/trunk/app/controllers/admin/themes_controller.rb
+END
+comments_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/72/trunk/app/controllers/admin/comments_controller.rb
+END
+categories_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/72/trunk/app/controllers/admin/categories_controller.rb
+END
+caches_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/66/trunk/app/controllers/admin/caches_controller.rb
+END
+configurations_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/72/trunk/app/controllers/admin/configurations_controller.rb
+END
+tags_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/72/trunk/app/controllers/admin/tags_controller.rb
+END
+profile_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/72/trunk/app/controllers/admin/profile_controller.rb
+END
+users_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/72/trunk/app/controllers/admin/users_controller.rb
+END
+topics_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/72/trunk/app/controllers/admin/topics_controller.rb
+END
+types_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/72/trunk/app/controllers/admin/types_controller.rb
+END
+index_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/72/trunk/app/controllers/admin/index_controller.rb
+END

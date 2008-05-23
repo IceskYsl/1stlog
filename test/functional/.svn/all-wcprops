@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/66/trunk/test/functional
+END
+tag_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/66/trunk/test/functional/tag_controller_test.rb
+END
+category_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/66/trunk/test/functional/category_controller_test.rb
+END
+nature_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/66/trunk/test/functional/nature_controller_test.rb
+END
+topic_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/66/trunk/test/functional/topic_controller_test.rb
+END
+archive_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/66/trunk/test/functional/archive_controller_test.rb
+END
+feed_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/66/trunk/test/functional/feed_controller_test.rb
+END
+trackback_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/66/trunk/test/functional/trackback_controller_test.rb
+END
+publish_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/66/trunk/test/functional/publish_controller_test.rb
+END
+index_controller_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/66/trunk/test/functional/index_controller_test.rb
+END

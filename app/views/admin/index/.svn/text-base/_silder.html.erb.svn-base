@@ -1,0 +1,31 @@
+
+<div class="tableborder">
+  <div class="tableheader">快捷链接</div>
+  <div class="leftmenubody">
+    <div class="leftmenuitem">• <%=link_to "新建文章",new_admin_topic_path%></div>    
+    <div class="leftmenuitem">• <%=link_to "添加属性",new_admin_nature_path%></div>
+    <div class="leftmenuitem">• <%=link_to "添加分类",new_admin_category_path%></div>
+    <div class="leftmenuitem">• <%=link_to "添加链接",new_admin_link_path%></div>
+  </div>
+</div>
+
+<div class="tableborder">
+  <div class="tableheader">快捷管理</div>
+  <div class="leftmenubody">
+    <div class="leftmenuitem">• <%=link_to "文章管理",admin_topics_path%></div>        
+    <div class="leftmenuitem">• <%=link_to "评论管理",admin_comments_path%></div>                
+    <div class="leftmenuitem">• <%=link_to "标签整理",admin_tags_path%></div>
+    <div class="leftmenuitem">• <%=link_to "附件整理",admin_attachments_path%></div>
+    <div class="leftmenuitem">• <%=link_to "用户管理",admin_users_path%></div>
+  </div>
+</div>
+
+<div class="tableborder">
+  <div class="tableheader">快捷设置</div>
+  <div class="leftmenubody">
+    <div class="leftmenuitem">• <%=link_to "系统设置",admin_configurations_path%></div>   
+    <div class="leftmenuitem">• <%=link_to "更新缓存",new_admin_topic_path%></div>    
+    <div class="leftmenuitem">• <%=link_to "个人设置",admin_user_path(session[:user_id])%></div>
+  </div>
+</div>
+

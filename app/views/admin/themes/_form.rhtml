@@ -1,0 +1,52 @@
+<%= error_messages_for 'link' %>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tbody><tr><td class="rightmainbody">
+        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+          
+          <tbody><tr class="tdbheader">
+              <td colspan="2">添加链接</td>
+              
+            </tr>
+            <tr class="tablecell">
+              <td>状态:</td>
+              <td><select name="visible">
+                  <option value="1" selected="selected">显示</option>
+              <option value="0">隐藏</option></select></td>
+            </tr>
+            <tr class="tablecell">
+              <td>上级分类:</td>
+              
+              <td><select id="link_parent_id" name="link[parent_id]" > 
+                  <option value="0">-无上级分类-</option>
+                  <%=options_from_collection_for_select(@plink, "id", "title",@link.parent_id) %> 
+              </select></td>
+            </tr>
+            <tr class="tablecell">
+              <td>名称:</td>
+              
+              <td><%= text_field 'link', 'title'  %></td>
+            </tr>
+            <tr class="tablecell">
+              <td>地址:</td>
+              <td><%= text_field 'link', 'weburl'  %></td>
+            </tr>
+            <tr class="tablecell">
+              <td>描述:</td>
+              
+              <td><%= text_field 'link', 'description'  %></td>
+            </tr>
+            <tr class="tablecell">
+              <td colspan="2" align="center"><input value="提交" class="formbutton" type="submit"> <input value="重置" class="formbutton" type="reset"></td>
+            </tr>
+            
+            <tr>
+              <td class="tablebottom" colspan="6"></td>
+            </tr>
+            
+      </tbody></table></td>
+    </tr>
+</tbody></table>
+<!--[form:link]-->
+
+<!--[eoform:link]-->
+

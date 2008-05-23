@@ -1,0 +1,10 @@
+
+<div class="tableborder">
+  <div class="tableheader">用户管理</div>
+  <div class="leftmenubody">
+    <div class="leftmenuitem">&#8226; <%=link_to "添加用户",new_admin_user_path%></div>
+    <div class="leftmenuitem">&#8226; <%=link_to "用户管理",admin_users_path%> </div>
+  </div>
+</div>
+
+ 

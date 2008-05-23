@@ -1,0 +1,14 @@
+
+<div class="tableborder">
+  <div class="tableheader">缓存管理</div>
+  <div class="leftmenubody">
+    <div class="leftmenuitem">&#8226; <%=link_to "查看配置缓存",admin_caches_path%></div>
+    <div class="leftmenuitem">&#8226; <%=link_to "刷新配置缓存",admin_caches_path%> </div>
+    <div class="leftmenuitem">&#8226; <%=link_to "刷新统计缓存",counts_admin_caches_path%> </div>
+    
+    
+    
+  </div>
+</div>
+
+ 

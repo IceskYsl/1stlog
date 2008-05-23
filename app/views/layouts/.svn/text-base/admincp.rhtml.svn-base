@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Language" content="UTF-8">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="keywords" content="1st,1stlog,1ster,1ster.cn,1sters,1sters!,ruby,rails,rubyonrails,blog,ROR,系统开发,网络,博客,自由,严肃,网络安全,组织,web,web安全,web开发,">
+    <meta name="description" content="1stlog是由1sters!团队IceskYsl设计开发的一款基于RubyOnRails的多人blog系统，扩展性、可定制性均很完美。">
+    <meta name="copyright" content="1stlog">
+    <meta name="author" content="IceskYsl,iceskysl@1sters!">
+    <title>控制面板::<%=$cached_configs['name']%>-</title>
+    <%= stylesheet_link_tag "cp", :media => "all" %>
+    <%= javascript_include_tag 'prototype'%>
+    <%= javascript_include_tag "textile-editor" %>
+    <%= javascript_include_tag 'global' %>
+  </head>
+  
+  <body>    
+<a name="TOP" id="TOP"></a>
+    <!-- 页眉区域-->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" background="/images/admin/page_bg.jpg">
+      <tbody><tr>
+          <td>
+            <div class="topBar">
+              <%=render(:partial => "shared/admin/topbar")%>
+            </div>
+            
+            <!-- 导航区域-->
+              <%=render(:partial => "shared/admin/nav")%>
+          </td>
+        </tr>
+    </tbody></table>
+    
+    <!-- 内容区域-->
+    <% if flash[:notice] -%>
+      <div id ="notice"> <%= flash[:notice] %> </div>
+    <% end -%>
+    <%= @content_for_layout %>
+                
+    <!-- 页尾区域-->
+    <div class="copyright">
+      <%=render(:partial => "shared/admin/copyright")%>
+    </div>
+    
+    
+  </body>
+</html>

@@ -1,0 +1,71 @@
+
+<% @topic_title = @topic.title%>
+<div class="entry">
+	<div class="latest">
+        <h2 id="post-9"><%=link_to h(@topic.title),{:controller=>"topic",:action=>"index",:id=>@topic.id},{:title=>@topic.title}%></h2>	
+        <div class="meta">
+    		Posted on  <%=@topic.created_at.to_s(:short)%> in 
+    		<%=link_to h(@topic.category.title),{:controller=>"category",:action=>"index",:id=>@topic.category_id},{:title=>@topic.category.title}%> 
+    		by <%=@topic.user.nickname%> </div>
+    	<div class="main">
+
+    	 <p>
+            <%=simple_format sanitize((RedCloth.new "#{@topic.body}").to_html)%>
+    	 </p>
+    	 <p>
+    	 <% if !@topic.attachment_id.blank?%>
+    	 <b>附件：</b><%=link_to h(@attachment.filename),{:controller=>"topic",:action=>"attachment",:id=>@attachment.id},{:title=>"下载附件:" << @attachment.filename}%>
+    	 (上传于<%=@attachment.created_at.to_s(:long) %>,被下载<%=@attachment.downloads%>次)
+    	 <% end %>
+    	 </p>
+        <%=render :partial=>"shared/adsense/topic_link"%>
+
+
+    	</div>
+	</div>
+</div>
+	
+<div class="comments">
+	<div class="comments-nice-bg">
+		<div class="comments-nice">
+	       <h3 class="reply"><%=@topic.comments_count%> Responses to '<%=@topic.title%>'</h3> 
+            <p class="comment_meta">
+            Subscribe to comments with  <%=link_to "RSS",{:controller=>"feed",:action=>"topic",:id=>@topic.id},{:title=>"Really Simple Syndication"}%>
+        	or 
+        	  <%=link_to_remote "TrackBack", :update => "trackback_div",
+        	  :url => {:action => "trackback", :id => @topic.id },:complete => "new Effect.Highlight('trackback_div')" %>
+        	to '<%=@topic.title%>'.<br/>
+        	<div id= "trackback_div"> </div>
+
+            </p>
+	   <ol class="commentlist">
+	   
+
+		 
+		 <% @comments.each do |comment| %> 
+		 <li class="" id="comment-47086">
+			<div class="comment_author">
+			<%=link_to h(comment.name),comment.website%> said,
+			</div>
+			
+			<p class="metadate">on <%=comment.created_at.to_s(:long)%> </p>			
+			<p><%=simple_format sanitize(comment.body)%></p>			
+		 </li>
+		 <% end %>
+	</ol>
+
+ 
+
+<h3 id="reply">Post a comment</h3>
+<%= form_tag :action => 'comment',:id=>@topic  %>
+
+  <%= render :partial => 'commentform' %>
+
+<% end_form_tag %>		
+		
+
+</div> <!-- /comments-nice -->
+</div> <!-- /comments-nice-bg -->
+	
+	
+</div> <!-- /comments -->

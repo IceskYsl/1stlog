@@ -1,0 +1,53 @@
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tbody>
+    <%@themes.each do |theme|%>
+      <tr class="tdbheader">
+        <td>模板名称:<%=theme.name%>  </td>
+      </tr>
+    
+      <tr>
+        <td class="alertbox">
+          <table border="0" cellpadding="20">
+            <tbody><tr>
+                <td align="center">
+                  <table class="screenshot" border="0" cellpadding="5" cellspacing="0">
+                    <tbody>
+                      <tr>
+                        <td><img src=<%="/admin/themes/preview/#{theme.id}"%> border="0"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              
+                <td valign="top">
+                  <h3><%=theme.name%> </h3>
+                  制作者:<%=link_to theme.author,theme.homepage%><br />
+                  发布时间:<%=theme.time%><br />
+                  模板目录:<%=theme.pwd%>       <br />
+                  描述信息:<br />
+                  <%=theme.description%>
+                            
+                  <div class="templateinfo2"><h2>
+                      <%if theme.useit == '1'%>
+                        使用中
+                      <%else%>
+                        <%=link_to "激活使用",edit_admin_theme_path(theme.id)%>
+                  <%end%></h2></div>
+                </td>
+              </tr>
+          </tbody></table>
+        </td>
+      </tr>
+    <%end%>
+    <tr class="tablecell">
+      <td colspan="8" nowrap="nowrap">
+      <div class="records">模板数:<%= @themes.size%></div>
+    </tr>
+    <tr>
+      <td class="tablebottom" colspan="9"></td>
+    </tr>
+</tbody></table>
+
+<br />
+

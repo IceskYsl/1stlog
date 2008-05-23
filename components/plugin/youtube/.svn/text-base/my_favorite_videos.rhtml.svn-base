@@ -1,0 +1,11 @@
+	<li><h2>My_videos</h2>
+	<ul>
+		<% @videos.each do |video| %> 
+		<li>
+		<%=link_to video.title,video.url%>
+		<%=video.embed_html(width = 120, height = 120)%>
+		
+		</li>
+		<% end %>
+	</ul>	
+	</li>

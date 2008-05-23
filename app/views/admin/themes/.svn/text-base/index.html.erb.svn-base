@@ -1,0 +1,39 @@
+
+
+﻿<div class="mainbody">
+  <div class="navlink"><a href="/admin/index">控制面版</a> » 模板管理</div>
+</div>
+
+
+
+<div class="mainbody">
+  <table border="0"  cellspacing="0" cellpadding="0" style="width:100%;">
+    
+    <tr>
+      <td valign="top" style="width:150px;">
+        <%=render(:partial => "slider")%>   
+      </td>
+      
+      <td valign="top" style="width:20px;"></td>
+      <td valign="top">
+        <div class="box">
+          <div class="alert">提示: 如何选择自己需要的模板</div>
+          <div class="alertmsg">
+            1stlog支持多模板,您可以根据自己的需要添加模板,也可以自己制作模板.<br />
+            <b>如何选择模板</b><br />
+            怎么样选择模板,我就不废话了.
+            <br /><br />
+            <b>如何选择模板</b><br />
+            怎么样选择模板,我就不废话了.
+          </div>
+        </div>
+        
+        
+      </td>
+    </tr>
+  </table>
+</div>
+
+ 
+
+ 

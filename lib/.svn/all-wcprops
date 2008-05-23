@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 26
+/svn/!svn/ver/66/trunk/lib
+END
+prince.rb
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/66/trunk/lib/prince.rb
+END
+pdf_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/66/trunk/lib/pdf_helper.rb
+END
+backup_database.rb
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/66/trunk/lib/backup_database.rb
+END
+flickr.rb
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/66/trunk/lib/flickr.rb
+END
+xmlsimple.rb
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/66/trunk/lib/xmlsimple.rb
+END
+youtube.rb
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/66/trunk/lib/youtube.rb
+END

@@ -1,0 +1,49 @@
+<% form_for(:topic,@topic, :url => {:action => "set"}, :html => { :multipart => false }) do |form| -%> 
+  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+  
+    <tr class="tdbheader">
+      <td width="45%">标题</td>
+      <td width="5%" nowrap>性质</td>
+      <td width="10%" nowrap>分类</td>
+      <td width="6%" nowrap>评论</td>
+      <td width="5%" nowrap>引用</td>
+    
+      <td width="15%" nowrap>时间</td>
+      <td width="12%" nowrap>发布者</td>
+      <td width="2%" nowrap>
+      <input name="chkall" value="on" type="checkbox" onclick="checkall(this.form)"></td>
+    </tr>
+    <%@topics.each do |topic|%>
+      <tr class="tablecell">
+        <td>
+          <%=link_to "<font color=\"#FF0000\">置顶</font>",{ :action => 'notop', :id => topic }  if topic.istop.to_i == 1 %>
+          <% if topic.visible.to_i == 1 %>
+                    <%=link_to "<font color=\"#009933\">显示</font>",{ :action => 'notop', :id => topic }%>
+          <% else %>
+                    <%=link_to "<font color=\"#FF0000\"> 隐藏</font>",{ :action => 'notop', :id => topic }%>
+          <% end %>
+             <%=link_to topic.title,edit_admin_topic_path(topic.id)%></td>
+          <td nowrap><%=topic.nature.title%></td>
+          <td nowrap><%=topic.category.title%></td>
+          <td nowrap><%=topic.comments_count%></td>
+          <td nowrap><%=topic.track_backs_count%></td>
+          <td nowrap><%=topic.created_at.to_s(:db)%></td>
+    
+            <td nowrap><%=topic.user.nickname%></td>
+            <td nowrap>
+              <%=check_box_tag("topics[]", topic.id, checked = false, options = {})%>
+            </td>
+          </tr>
+        <%end%>
+        <tr class="tablecell">
+          <td colspan="8" nowrap="nowrap"><div class="records">页:<%= @topics.current_page%>/<%=@topics.page_count %>,记录:<%=@topics.total_entries %></div>
+      
+          <div class="multipage"><%= will_paginate @topics %></div></td>
+    
+        </tr>
+  
+        <tr>
+          <td class="tablebottom" colspan="8"></td>
+        </tr>
+      </table>
+    <% end %>

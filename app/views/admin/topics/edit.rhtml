@@ -1,0 +1,34 @@
+<h1>Editing topic</h1>
+
+<%if @app_editor.value == "advanced_tiny_mce"%>
+<script type="text/javascript" >
+  tinyMCE.init({
+    mode:"textareas", 
+    theme : "advanced",
+    editor_selector : "tiny_mce",
+	theme_advanced_toolbar_location : "top",
+	theme_advanced_toolbar_align : "left",
+	theme_advanced_path_location : "bottom",
+	theme_advanced_resizing : "true",
+    theme_advanced_front_size : "18px",
+  });
+</script>
+<% elsif @app_editor.value == "simple_tiny_mce"%>
+<script type="text/javascript" >
+  tinyMCE.init({
+    mode:"textareas", 
+    theme : "simple",
+    editor_selector : "tiny_mce"
+  });
+</script>
+<% else %>
+
+<% end %>
+
+<% form_tag :action => 'update', :id => @topic do %>
+  <%= render :partial => 'form' %>
+  <%= submit_tag 'Edit' %>
+<% end %>
+
+<%= link_to 'Show', :action => 'show', :id => @topic %> |
+<%= link_to 'Back', :action => 'list' %>
