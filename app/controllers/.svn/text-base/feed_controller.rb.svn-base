@@ -91,11 +91,11 @@ class FeedController < ApplicationController
       maker.channel.description = "Ruby On Rails Techlogs:#{@topic.title}"
       maker.channel.link = "http://www.1ster.cn/topic/#{@topic.id}"      
       maker.items.do_sort = true
-        item = maker.items.new_item
-        item.link = "http://www.1ster.cn/topic/#{@topic.id}"
-        item.title = @topic.title
-        item.date = @topic.created_at
-        item.description = @topic.body
+      item = maker.items.new_item
+      item.link = "http://www.1ster.cn/topic/#{@topic.id}"
+      item.title = @topic.title
+      item.date = @topic.created_at
+      item.description = @topic.body
 
     end
     send_data feed.to_s, :type => "application/rss+xml", :disposition => 'inline'

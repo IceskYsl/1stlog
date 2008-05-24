@@ -10,8 +10,8 @@ https://1stlog.googlecode.com/svn
 2008-04-22T01:27:37.349214Z
 66
 iceskysl
-
-
+has-props
+has-prop-mods
 svn:special svn:externals svn:needs-lock
 
 
@@ -223,7 +223,7 @@ file
 
 
 
-
+delete
 2008-05-23T16:34:19.000000Z
 f21cd53148d458346055965b9f4af600
 2008-04-22T01:27:37.349214Z

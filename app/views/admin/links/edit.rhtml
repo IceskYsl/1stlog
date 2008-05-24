@@ -1,9 +1,25 @@
-<h1>Editing link</h1>
 
-<% form_tag :action => 'update', :id => @link do %>
-  <%= render :partial => 'form' %>
-  <%= submit_tag 'Edit' %>
-<% end %>
 
-<%= link_to 'Show', :action => 'show', :id => @link %> |
-<%= link_to 'Back', :action => 'list' %>
+﻿<div class="mainbody">
+  <div class="navlink"><a href="/admin/index">控制面版</a> » 链接管理</div>
+</div>
+
+
+
+<div class="mainbody">
+  <table border="0"  cellspacing="0" cellpadding="0" style="width:100%;">
+    
+    <tr>
+      <td valign="top" style="width:150px;">
+        <%=render(:partial => "slider")%>   
+      </td>
+      
+      <td valign="top" style="width:20px;"></td>
+      <td valign="top">
+          <% form_for(:link, :url => admin_link_path(:id => @link) ,:html => { :method => :put }) do |form| -%>
+          <%= render :partial => 'form' ,:object => form%>
+        <% end %>
+      </td>
+    </tr>
+  </table>
+</div>

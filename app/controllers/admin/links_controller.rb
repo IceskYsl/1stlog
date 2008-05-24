@@ -8,8 +8,7 @@ class Admin::LinksController < Admin::IndexController
   end
 
   # GETs should be safe (see http://www.w3.org/2001/tag/doc/whenToUseGet.html)
-  verify :method => :post, :only => [ :destroy, :create, :update ],
-         :redirect_to => { :action => :list }
+  verify :method => :post, :only => [ :destroy, :create ], :redirect_to => { :action => :index }
 
   def list
     visible =params[:visible]
@@ -20,9 +19,7 @@ class Admin::LinksController < Admin::IndexController
     end
   end
 
-  def show
-    @link = Link.find(params[:id])
-  end
+ 
 
   def new
     @plink = Link.find(:all,:conditions => "parent_id = 0")
@@ -32,8 +29,8 @@ class Admin::LinksController < Admin::IndexController
   def create
     @link = Link.new(params[:link])
     if @link.save
-      flash[:notice] = 'Link was successfully created.'
-      redirect_to :action => 'list'
+      flash[:notice] = "链接'#{@link.title}'添加成功."
+      redirect_to :action => 'index'
     else
       render :action => 'new'
     end
@@ -47,8 +44,8 @@ class Admin::LinksController < Admin::IndexController
   def update
     @link = Link.find(params[:id])
     if @link.update_attributes(params[:link])
-      flash[:notice] = 'Link was successfully updated.'
-      redirect_to :action => 'show', :id => @link
+      flash[:notice] = '链接更新成功.'
+      redirect_to :action => 'index'
     else
       render :action => 'edit'
     end
@@ -58,4 +55,5 @@ class Admin::LinksController < Admin::IndexController
     Link.find(params[:id]).destroy
     redirect_to :action => 'list'
   end
+  
 end

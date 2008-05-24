@@ -1,7 +1,7 @@
   require 'rubygems'
   require 'net/http'
   require 'uri'
-  require_gem 'builder'
+#  require_gem 'builder'
 
 
   

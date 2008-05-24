@@ -9,31 +9,36 @@
           
           <td nowrap width="20%">地址</td>
           <td nowrap width="40%">描述</td>
+          <td nowrap="nowrap" width="2%"> 编辑 </td>
+          
         </tr>
         <%@links.each do |link|%>
           <tr class="tablecell">
           
             <td nowrap><%=link.title%></td>
-            <td nowrap><%=link.type.name%></td>
+            <td nowrap><%=link.parent%></td>
             <td nowrap><%=link.weburl%></td>
-              <td nowrap><%=link.description%></td>
-            </tr>
-          <%end%>
-                
-          
-          <tr class="tablecell">
-            <td colspan="8" nowrap="nowrap"><div class="records">页:<%= @links.current_page%>/<%=@links.page_count %>,记录:<%=@links.total_entries %></div>
+            <td><%=link.description%></td>
+            <td nowrap="nowrap">
+              <%=link_to image_tag("icos/edit.gif", :border=>"0",:size => "16x16", :alt => "编辑"),{:action=>"edit",:id=>link.id}%>
+            </td>
+          </tr>
+        <%end%>
+                        
+                  
+        <tr class="tablecell">
+          <td colspan="5" nowrap="nowrap"><div class="records">页:<%= @links.current_page%>/<%=@links.page_count %>,记录:<%=@links.total_entries %></div>
             
-            <div class="multipage"><%= will_paginate @links %></div></td>
+          <div class="multipage"><%= will_paginate @links %></div></td>
           
-          </tr>
+        </tr>
         
-          <tr>
-            <td class="tablebottom" colspan="9"></td>
-          </tr>
-        </table>
-      </td>
+        <tr>
+          <td class="tablebottom" colspan="5"></td>
+        </tr>
+      </table>
+    </td>
     
-    </tr>
+  </tr>
   
-  </table>
+</table>

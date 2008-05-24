@@ -6,24 +6,24 @@
   <li>
     <h2><%=item_title ||= "Categories"%></h2>	
     <ul>
-      <% @types.each do |type| %> 
+      <% @parent_categories.each do |type| %> 
         <li id="subcategories">
           <h3><%= type.title-%></h3>
           <ul class='children'>
             <% @category_of_type.each do |category| %>
               <% if category %>             
-                      <% category.each do |t| %> 
-                         <% if type.id == t.type_id %>
+                <% category.each do |t| %> 
+                  <% if type.id == t.parent_id %>
                     <li>
                       <%=link_to "[RSS]",{:controller=>"feed",:action=>"category",:id=>t.id}%>    <%=link_to sanitize("#{t.title}(#{t.topics_count})"),category_path(t.id),{} -%>
-                      </li>
-                    <% end %>		
-                 <% end %>		
-        <% end %>
+                    </li>
+                  <% end %>		
+                <% end %>		
+              <% end %>
+            <% end %>
+          </ul>
+        </li>
       <% end %>
-            </ul>
-          </li>
-        <% end %>
-      </ul>
-    </li>
-  <% end %>
+    </ul>
+  </li>
+<% end %>

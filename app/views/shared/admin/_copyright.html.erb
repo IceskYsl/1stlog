@@ -2,9 +2,9 @@
   <tbody>
     <tr>
       <td align="center" width="60"></td>
-      <td align="left">Powered by <strong><a href="http://1stlog.1sters.com/" target="_blank">1stlog Ver 1.2.0.0</a></strong> © <%= year_range(2007) -%> 
-        <strong><a href="http://www.1sters.com/" target="_blank">1sters.com</a></strong><br>
-      Version: Build 20080420</td> 
+      <td align="left">Powered by <strong><a href="http://1stlog.1sters.com/" target="_blank"><%=LOG_APP_CONFIG['APP']['NAME']+" "+LOG_APP_CONFIG['APP']['VERSION']%></a></strong> © <%= year_range(2007) -%> 
+        <strong><a href=<%=LOG_APP_CONFIG['COPYRIGHT']['HOMEPAGE']%> target="_blank"><%=LOG_APP_CONFIG['COPYRIGHT']['NAME']%></a></strong>
+      Version: <%=LOG_APP_CONFIG['APP']['RELEASE_TIME']%></td> 
       <td align="center" width="120"></td>
     </tr>
 </tbody></table>

@@ -7,12 +7,8 @@
               <td colspan="2">添加链接</td>
               
             </tr>
-            <tr class="tablecell">
-              <td>状态:</td>
-              <td><select name="visible">
-                  <option value="1" selected="selected">显示</option>
-              <option value="0">隐藏</option></select></td>
-            </tr>
+
+            
             <tr class="tablecell">
               <td>上级分类:</td>
               
@@ -24,16 +20,22 @@
             <tr class="tablecell">
               <td>名称:</td>
               
-              <td><%= text_field 'link', 'title'  %></td>
+              <td><%= text_field 'link', 'title' ,{:size=>20, :class => 'formfield' } %></td>
             </tr>
             <tr class="tablecell">
               <td>地址:</td>
-              <td><%= text_field 'link', 'weburl'  %></td>
+              <td><%= text_field 'link', 'weburl' ,{:size=>20, :class => 'formfield' } %></td>
             </tr>
             <tr class="tablecell">
               <td>描述:</td>
               
-              <td><%= text_field 'link', 'description'  %></td>
+              <td><%= text_field 'link', 'description' ,{ :class => 'formfield' } %></td>
+            </tr>
+            <tr class="tablecell">
+              <td>状态:</td>
+              <td><select name="visible">
+                  <option value="1" selected="selected">显示</option>
+              <option value="0">隐藏</option></select></td>
             </tr>
             <tr class="tablecell">
               <td colspan="2" align="center"><input value="提交" class="formbutton" type="submit"> <input value="重置" class="formbutton" type="reset"></td>

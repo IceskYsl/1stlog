@@ -11,8 +11,7 @@ ActionController::Routing::Routes.draw do |map|
 
   #后台管理需要的URL
   map.namespace(:admin) do |admin|
-    admin.resources :categories,
-      :has_many   => [ :topics, :comments ] 
+    admin.resources :categories, :has_many   => [ :topics, :comments ] ,:collection=>{:list => :get}
     admin.resources :natures,
       :has_one   => [   :topics, :comments ] 
     admin.resources  :topics,:collection=>{:list => :get}
@@ -26,6 +25,7 @@ ActionController::Routing::Routes.draw do |map|
     admin.resources  :attachments
     admin.resources  :plugins
     admin.resources  :caches,:collection=>{:counts => :get}
+     admin.resources  :logs,:collection=>{:counts => :get}
   end
 
   #前台

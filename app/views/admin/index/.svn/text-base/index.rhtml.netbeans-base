@@ -1,0 +1,21 @@
+<div class="mainbody">
+  <div class="navlink"><a href="/admin/index">控制面版</a> » 后台首页</div>
+</div>
+
+<div class="mainbody">
+  <table style="width: 100%;" border="0" cellpadding="0" cellspacing="0">
+    <tbody><tr>
+        <td style="width: 150px;" valign="top"> 
+          <%=render(:partial => "silder")%>         
+        </td>
+        <td style="width: 20px;" valign="top"></td>
+        
+        <td valign="top">
+          <%=render(:partial => "content")%> 
+        </td>
+      </tr>
+  </tbody></table>
+</div>
+
+
+

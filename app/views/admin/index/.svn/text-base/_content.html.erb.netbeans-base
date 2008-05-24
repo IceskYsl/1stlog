@@ -1,0 +1,148 @@
+<div id="news_box" class="box" style="">
+  <div id="news_title" class="alert">Ver1.2.0.0 Build 20080420正式版发布:</div>
+  <div id="" class="alertmsg">
+    1stlog Ver 1.2.0.0版本发布,包含重要的性能改进和功能完善,例如支持多模板,可配置等,详细功能请参考
+    <a href="http://1stlog.1sters.com" target="_blank">http://1stlog.1sters.com</a>
+    说明.
+    
+  </div>
+</div>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tbody><tr>
+      <td class="rightmainbody">
+        <table align="center" border="0" cellpadding="4" cellspacing="0" width="100%">
+          <tbody><tr class="tdbheader">
+              <td width="30%">后台在线用户</td>
+              <td width="30%">IP地址</td>
+              <td width="40%">最后活动时间</td>
+            </tr>
+            
+            <tr class="tablecell">
+              <%$application[:online_users].each{|user_id,online_user| %>
+              <td> <%= User.find(user_id).nickname %> </td>
+              <td> <%= online_user[:ip] %> </td>
+              <td> <%= online_user[:active_time].to_s(:db) %> </td>
+              <%} -%>
+            </tr>
+            
+            <tr><td class="tablebottom" colspan="3"></td>
+            </tr>
+      </tbody></table></td>
+    </tr>
+    <tr>
+      <td height="20"></td>
+    </tr>
+    
+    
+    <tr>
+      <td class="rightmainbody" valign="top"><table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+          <tbody>
+            <tr class="tdbheader">
+              <td colspan="2">数据统计</td>
+            </tr>
+            <tr class="tablecell">
+              <td width="50%">文章数量:</td>
+              <td width="50%"><%=$cached_statistics['topics_count']%></td>
+            </tr>
+            <tr class="tablecell">
+              <td width="50%">评论数量:</td>
+              <td width="50%"><%=$cached_statistics['comments_count']%></td>
+            </tr>
+            <tr class="tablecell">
+              <td width="50%">链接数:</td>
+              <td width="50%"><%=$cached_statistics['links_count']%></td>
+            </tr>
+            <tr class="tablecell">
+              <td width="50%">标签数:</td>
+              <td width="50%"><%=$cached_statistics['tags_count']%></td>
+            </tr>
+            <tr class="tablecell">
+              <td width="50%">分类数:</td>
+              <td width="50%"><%=$cached_statistics['categories_count']%></td>
+            </tr>
+            <tr class="tablecell">
+              <td width="50%">用户数:</td>
+              <td width="50%"><%=$cached_statistics['users_count']%></td>
+            </tr>
+            <tr>
+              <td class="tablebottom" colspan="2"></td>
+            </tr>
+      </tbody></table></td>
+    </tr>
+    <tr>
+      <td height="20"></td>
+    </tr>
+    <tr>
+      <td class="rightmainbody" valign="top"><table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+          <tbody><tr class="tdbheader">
+              <td colspan="2">服务器相关信息</td>
+            </tr>
+            <tr class="tablecell">
+              <td width="50%">当前Ruby版本:</td>
+              <td width="50%"><%=RUBY_VERSION%></td>
+            </tr>
+            <tr class="tablecell">
+              <td width="50%">当前Rails版本:</td>
+              <td width="50%"><%=RAILS_GEM_VERSION%></td>
+            </tr>
+            <tr class="tablecell">
+              <td width="50%">当前运行模式:</td>
+              <td width="50%"><%=RAILS_ENV%></td>
+            </tr>
+            <tr class="tablecell">
+              <td width="50%">当前路径:</td>
+              <td width="50%"><%=RAILS_ROOT%></td>
+            </tr>
+            <tr class="tablecell">
+
+              <td width="50%">当前环境:<%=link_to "点击查看详细信息",{:action=>'show_env'},:popup => ['Env', 'height=400,width=600,resizable=yes,scrollbars=yes,toolbar=no,location=no,status=yes']%></td>
+              <td width="50%">USER=<%=ENV['USER']%>,HOME=<%=ENV['HOME']%>
+              <br />PATH=<%=ENV['PATH']%>
+
+              </td>
+            </tr>
+            <tr>
+              <td class="tablebottom" colspan="2"></td>
+            </tr>
+      </tbody></table></td>
+    </tr>
+    
+    <tr>
+      <td height="20"></td>
+    </tr>
+    <tr>
+      <td class="rightmainbody" valign="top"><table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+          <tbody><tr class="tdbheader">
+              <td colspan="2">程序相关信息</td>
+            </tr>
+            <tr class="tablecell">
+              <td width="50%">系统名称:</td>
+              <td width="50%"><%=LOG_APP_CONFIG['NAME']%></td>
+            </tr>
+            <tr class="tablecell">
+              <td width="50%">当前版本:</td>
+              <td width="50%"><%=LOG_APP_CONFIG['VERSION']%></td>
+            </tr>
+            <tr class="tablecell">
+              <td width="50%">发布时间:</td>
+              <td width="50%"><%=LOG_APP_CONFIG['RELEASE_TIME']%></td>
+            </tr>
+            
+            <tr class="tablecell">
+              <td width="50%">程序开发:</td>
+              <td width="50%"><a href=<%="mailto:#{LOG_APP_CONFIG['AUTHOR_EMAIL']}"%> target="_blank"><%=LOG_APP_CONFIG['AUTHOR']%></a></td>
+            </tr>
+            
+            <tr class="tablecell">
+              <td width="50%">官方主页:</td>
+              <td width="50%">
+                <a href=<%="#{LOG_APP_CONFIG['AUTHOR_BLOG']}"%> target="_blank"><%=LOG_APP_CONFIG['AUTHOR_BLOG']%></a>, 
+              <a href=<%="#{LOG_APP_CONFIG['HOMEPAGE']}"%> target="_blank"><%=LOG_APP_CONFIG['HOMEPAGE']%></a></td>
+            </tr>
+            <tr>
+              <td class="tablebottom" colspan="2"></td>
+            </tr>
+      </tbody></table></td>
+    </tr>
+  </tbody>
+</table>

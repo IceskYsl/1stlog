@@ -4,30 +4,36 @@
       <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
         
         <tr class="tdbheader">
-          <td nowrap width="16%">名称</td>
-          <td nowrap width="10%">分类</td>
+          <td nowrap width="5%">位置</td>
+          <td nowrap width="16%">分类名称</td>
           <td nowrap width="20%">父分类</td>
+          <td nowrap width="10%">文章数</td>
           <td nowrap width="40%">描述</td>
+           <td nowrap="nowrap" width="2%"> 编辑 </td>
         </tr>
         <%@categories.each do |cate|%>
           <tr class="tablecell">
             <td nowrap><%=cate.position%></td>
             <td nowrap><%=cate.title%></td>
-            <td nowrap><%=cate.type.title%></td>
-            <td nowrap><%=cate.description%></td>
+            <td nowrap><%=cate.parent%></td>
+            <td nowrap><%=cate.topics_count%></td>
+            <td nowrap><%=cate.desc%></td>
+              <td nowrap="nowrap">
+              <%=link_to image_tag("icos/edit.gif", :border=>"0",:size => "16x16", :alt => "编辑"),{:action=>"edit",:id=>cate.id}%>
+            </td>
           </tr>
         <%end%>
-              
-        
+                                              
+                                        
         <tr class="tablecell">
-          <td colspan="8" nowrap="nowrap">
+          <td colspan="6" nowrap="nowrap">
             <div class="records">页:<%= @categories.current_page%>/<%=@categories.page_count %>,记录:<%=@categories.total_entries %></div>
             <div class="multipage"><%= will_paginate @categories %></div>
           </td>
         </tr>
         
         <tr>
-          <td class="tablebottom" colspan="4"></td>
+          <td class="tablebottom" colspan="6"></td>
         </tr>
       </table>
     </td>

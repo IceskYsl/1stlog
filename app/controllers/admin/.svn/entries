@@ -10,8 +10,8 @@ https://1stlog.googlecode.com/svn
 2008-05-20T10:31:11.870824Z
 72
 wujunchen
-
-
+has-props
+has-prop-mods
 svn:special svn:externals svn:needs-lock
 
 
@@ -187,7 +187,7 @@ file
 
 
 
-
+delete
 2008-05-23T16:33:03.000000Z
 00f4de9a1c34bd49623d3534819caf8e
 2008-05-20T10:31:11.870824Z

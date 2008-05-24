@@ -1,7 +1,6 @@
 class Topic < ActiveRecord::Base
 
   belongs_to :category ,:counter_cache => true
-  belongs_to :type ,:counter_cache => true
   belongs_to :nature ,:counter_cache => true
   belongs_to :user ,:counter_cache => true
   belongs_to :tag ,:counter_cache => true

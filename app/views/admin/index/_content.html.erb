@@ -19,9 +19,9 @@
             
             <tr class="tablecell">
               <%$application[:online_users].each{|user_id,online_user| %>
-              <td> <%= User.find(user_id).nickname %> </td>
-              <td> <%= online_user[:ip] %> </td>
-              <td> <%= online_user[:active_time].to_s(:db) %> </td>
+                <td> <%= User.find(user_id).nickname %> </td>
+                <td> <%= online_user[:ip] %> </td>
+                <td> <%= online_user[:active_time].to_s(:db) %> </td>
               <%} -%>
             </tr>
             
@@ -94,11 +94,11 @@
               <td width="50%"><%=RAILS_ROOT%></td>
             </tr>
             <tr class="tablecell">
-
+              
               <td width="50%">当前环境:<%=link_to "点击查看详细信息",{:action=>'show_env'},:popup => ['Env', 'height=400,width=600,resizable=yes,scrollbars=yes,toolbar=no,location=no,status=yes']%></td>
               <td width="50%">USER=<%=ENV['USER']%>,HOME=<%=ENV['HOME']%>
-              <br />PATH=<%=ENV['PATH']%>
-
+                <br />PATH=<%=ENV['PATH']%>
+                
               </td>
             </tr>
             <tr>
@@ -117,27 +117,27 @@
             </tr>
             <tr class="tablecell">
               <td width="50%">系统名称:</td>
-              <td width="50%"><%=LOG_APP_CONFIG['NAME']%></td>
+              <td width="50%"><%=LOG_APP_CONFIG['APP']['NAME']%></td>
             </tr>
             <tr class="tablecell">
               <td width="50%">当前版本:</td>
-              <td width="50%"><%=LOG_APP_CONFIG['VERSION']%></td>
+              <td width="50%"><%=LOG_APP_CONFIG['APP']['VERSION']%></td>
             </tr>
             <tr class="tablecell">
               <td width="50%">发布时间:</td>
-              <td width="50%"><%=LOG_APP_CONFIG['RELEASE_TIME']%></td>
+              <td width="50%"><%=LOG_APP_CONFIG['APP']['RELEASE_TIME']%></td>
             </tr>
             
             <tr class="tablecell">
               <td width="50%">程序开发:</td>
-              <td width="50%"><a href=<%="mailto:#{LOG_APP_CONFIG['AUTHOR_EMAIL']}"%> target="_blank"><%=LOG_APP_CONFIG['AUTHOR']%></a></td>
+              <td width="50%"><a href=<%="mailto:#{LOG_APP_CONFIG['AUTHOR']['EMAIL']}"%> target="_blank"><%=LOG_APP_CONFIG['AUTHOR']['NAME']%></a></td>
             </tr>
             
             <tr class="tablecell">
               <td width="50%">官方主页:</td>
               <td width="50%">
-                <a href=<%="#{LOG_APP_CONFIG['AUTHOR_BLOG']}"%> target="_blank"><%=LOG_APP_CONFIG['AUTHOR_BLOG']%></a>, 
-              <a href=<%="#{LOG_APP_CONFIG['HOMEPAGE']}"%> target="_blank"><%=LOG_APP_CONFIG['HOMEPAGE']%></a></td>
+                <a href=<%="#{LOG_APP_CONFIG['AUTHOR']['BLOG']}"%> target="_blank"><%=LOG_APP_CONFIG['AUTHOR']['BLOG']%></a>, 
+              <a href=<%="#{LOG_APP_CONFIG['AUTHOR']['HOMEPAGE'] }"%> target="_blank"><%=LOG_APP_CONFIG['AUTHOR']['HOMEPAGE']%></a></td>
             </tr>
             <tr>
               <td class="tablebottom" colspan="2"></td>

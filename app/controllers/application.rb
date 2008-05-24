@@ -11,8 +11,8 @@ class ApplicationController < ActionController::Base
   end
     
   #model :noisy_image
-#  before_filter :initdata
-#  before_filter :init_show_item
+  #  before_filter :initdata
+  #  before_filter :init_show_item
   before_filter :configure_charsets
   caches_action :initdata, :init_show_item,:nav
 
@@ -51,39 +51,39 @@ class ApplicationController < ActionController::Base
   end
   
   #初始化数据
-#  def initdata
-#    @app_title=Configuration.find_by_name("title")
-#    @app_subtitle=Configuration.find_by_name("subtitle")
-#    @app_name=Configuration.find_by_name("name")
-#    @app_url=Configuration.find_by_name("url")
-#    @key =Configuration.find_by_name("key")
-#    @viewmode = Configuration.find_by_name("viewmode")
-#    @about =Configuration.find_by_name("about") 
-#    @about_authors = Configuration.find_by_name("about_authors") 
-#    @powered_by = Configuration.find_by_name("powered_by")
-#    @app_theme = Configuration.find_by_name("theme")
-#    @app_editor_style = Configuration.find_by_name("editor_style")
-#    @app_editor_mode = Configuration.find_by_name("editor_mode")
-#    @icp = Configuration.find_by_name("icp")
-#  end
+  #  def initdata
+  #    @app_title=Configuration.find_by_name("title")
+  #    @app_subtitle=Configuration.find_by_name("subtitle")
+  #    @app_name=Configuration.find_by_name("name")
+  #    @app_url=Configuration.find_by_name("url")
+  #    @key =Configuration.find_by_name("key")
+  #    @viewmode = Configuration.find_by_name("viewmode")
+  #    @about =Configuration.find_by_name("about") 
+  #    @about_authors = Configuration.find_by_name("about_authors") 
+  #    @powered_by = Configuration.find_by_name("powered_by")
+  #    @app_theme = Configuration.find_by_name("theme")
+  #    @app_editor_style = Configuration.find_by_name("editor_style")
+  #    @app_editor_mode = Configuration.find_by_name("editor_mode")
+  #    @icp = Configuration.find_by_name("icp")
+  #  end
   
-#  def init_show_item
-#    @show_natures = Configuration.find_by_name("show_natures")
-#    @show_categories = Configuration.find_by_name("show_categories")
-#    @show_archives = Configuration.find_by_name("show_archives")
-#    @show_links = Configuration.find_by_name("show_links")
-#    @show_statistics = Configuration.find_by_name("show_statistics")
-#    @show_hot_entries = Configuration.find_by_name("show_hot_entries")
-#    @show_last_entries = Configuration.find_by_name("show_last_entries")
-#    @show_hot_tags = Configuration.find_by_name("show_hot_tags")
-#    @show_last_comments = Configuration.find_by_name("show_last_comments")
-#    @show_authors = Configuration.find_by_name("show_authors")
-#    @show_metas = Configuration.find_by_name("show_metas")
-#    @show_visitors = Configuration.find_by_name("show_visitors")
-#    @show_adsense = Configuration.find_by_name("show_adsense")
-#    @show_noisy_image = Configuration.find_by_name("show_noisy_image")
-#    
-#  end
+  #  def init_show_item
+  #    @show_natures = Configuration.find_by_name("show_natures")
+  #    @show_categories = Configuration.find_by_name("show_categories")
+  #    @show_archives = Configuration.find_by_name("show_archives")
+  #    @show_links = Configuration.find_by_name("show_links")
+  #    @show_statistics = Configuration.find_by_name("show_statistics")
+  #    @show_hot_entries = Configuration.find_by_name("show_hot_entries")
+  #    @show_last_entries = Configuration.find_by_name("show_last_entries")
+  #    @show_hot_tags = Configuration.find_by_name("show_hot_tags")
+  #    @show_last_comments = Configuration.find_by_name("show_last_comments")
+  #    @show_authors = Configuration.find_by_name("show_authors")
+  #    @show_metas = Configuration.find_by_name("show_metas")
+  #    @show_visitors = Configuration.find_by_name("show_visitors")
+  #    @show_adsense = Configuration.find_by_name("show_adsense")
+  #    @show_noisy_image = Configuration.find_by_name("show_noisy_image")
+  #    
+  #  end
   
   def init_show_nums
   
@@ -92,10 +92,10 @@ class ApplicationController < ActionController::Base
   #侧边栏
   def nav
     #分类
-    @types = Type.find(:all)
+    @parent_categories = Category.get_all_parent_items
     @category_of_type = []  
-    for type in @types  
-      @category_of_type << Category.find(:all,:conditions=>['type_id=?',type.id],:order => "position DESC")
+    for parent in @parent_categories  
+      @category_of_type << Category.get_all_items_in_parent(parent.id)
     end 
      
     #链接
