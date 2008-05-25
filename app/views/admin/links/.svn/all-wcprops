@@ -1,37 +1,35 @@
+K 26
+svn:wc:ra_dav:activity-url
+V 14
+/svn/!svn/act/
 K 25
 svn:wc:ra_dav:version-url
 V 44
-/svn/!svn/ver/66/trunk/app/views/admin/links
+/svn/!svn/ver/79/trunk/app/views/admin/links
 END
-list.rhtml
+list.html.erb
 K 25
 svn:wc:ra_dav:version-url
-V 55
-/svn/!svn/ver/66/trunk/app/views/admin/links/list.rhtml
-END
-show.rhtml
-K 25
-svn:wc:ra_dav:version-url
-V 55
-/svn/!svn/ver/66/trunk/app/views/admin/links/show.rhtml
+V 58
+/svn/!svn/ver/79/trunk/app/views/admin/links/list.html.erb
 END
 _form.rhtml
 K 25
 svn:wc:ra_dav:version-url
 V 56
-/svn/!svn/ver/66/trunk/app/views/admin/links/_form.rhtml
+/svn/!svn/ver/79/trunk/app/views/admin/links/_form.rhtml
 END
 edit.rhtml
 K 25
 svn:wc:ra_dav:version-url
 V 55
-/svn/!svn/ver/66/trunk/app/views/admin/links/edit.rhtml
+/svn/!svn/ver/79/trunk/app/views/admin/links/edit.rhtml
 END
 _items.html.erb
 K 25
 svn:wc:ra_dav:version-url
 V 60
-/svn/!svn/ver/66/trunk/app/views/admin/links/_items.html.erb
+/svn/!svn/ver/79/trunk/app/views/admin/links/_items.html.erb
 END
 _slider.html.erb
 K 25
@@ -43,5 +41,5 @@ new.rhtml
 K 25
 svn:wc:ra_dav:version-url
 V 54
-/svn/!svn/ver/66/trunk/app/views/admin/links/new.rhtml
+/svn/!svn/ver/79/trunk/app/views/admin/links/new.rhtml
 END

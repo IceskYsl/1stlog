@@ -1,11 +1,19 @@
 KEY: "trackback_key"
 visible: "1"
 
-NAME: "1stlog"
-VERSION: "Ver1.2.0.0"
-RELEASE_TIME: "2008.04.20"
-HOMEPAGE: "http://1stlog.1sters.com"
+APP:
+    NAME: "1stlog"
+    VERSION: "Ver2.0.0"
+    RELEASE_TIME: "2008.05.24"
+    HOMEPAGE: "http://1stlog.1sters.com"
 
-AUTHOR: "IceskYsl@1sters!"
-AUTHOR_EMAIL: "iceskysl@gmail.com"
-AUTHOR_BLOG: "http://iceskysl.1sters.com"
+
+AUTHOR:
+    NAME: "IceskYsl@1sters!"
+    EMAIL: "iceskysl@gmail.com"
+    BLOG: "http://iceskysl.1sters.com"
+
+COPYRIGHT:
+    NAME: 1sters!
+    HOMEPAGE: http://www.1sters.com
+    

@@ -19,7 +19,7 @@ routes.rb
 K 25
 svn:wc:ra_dav:version-url
 V 39
-/svn/!svn/ver/68/trunk/config/routes.rb
+/svn/!svn/ver/82/trunk/config/routes.rb
 END
 database.yml
 K 25
@@ -37,7 +37,7 @@ appconfig.yml
 K 25
 svn:wc:ra_dav:version-url
 V 43
-/svn/!svn/ver/66/trunk/config/appconfig.yml
+/svn/!svn/ver/82/trunk/config/appconfig.yml
 END
 environment.rb
 K 25

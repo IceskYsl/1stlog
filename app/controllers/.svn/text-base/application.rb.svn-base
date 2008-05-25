@@ -92,10 +92,10 @@ class ApplicationController < ActionController::Base
   #侧边栏
   def nav
     #分类
-    @types = Type.find(:all)
+    @parent_categories = Category.get_all_parent_items
     @category_of_type = []  
-    for type in @types  
-      @category_of_type << Category.find(:all,:conditions=>['type_id=?',type.id],:order => "position DESC")
+    for parent in @parent_categories  
+      @category_of_type << Category.get_all_items_in_parent(parent.id)
     end 
      
     #链接

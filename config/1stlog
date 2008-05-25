@@ -1,0 +1,53 @@
+# File generated on 25 May 08
+
+#upstream name has to be unique so add on the port number
+
+ 
+
+#generate multiple mongrels
+upstream mongrels_9000{
+    
+        server 127.0.0.1:9000;
+    
+        server 127.0.0.1:9001;
+    
+    }
+
+# Redirect http://domain to http://www.domain
+
+server {
+            listen   80;
+            server_name  1stlog.1sters.com ;
+            rewrite ^/(.*) http://www.1stlog.1sters.com permanent;
+           }
+
+server {
+            listen   80;
+            server_name www.1stlog.1sters.com;
+
+            access_log /home/taojer/webroot/ror/1stlog/shared/log/access.log;
+            error_log  /home/taojer/webroot/ror/1stlog/shared/log/error.log;
+
+            root   /home/taojer/webroot/ror/1stlog/current/public/;
+            index  index.html;
+
+            location / {
+                   proxy_set_header  X-Real-IP  $remote_addr;
+                   proxy_set_header  X-Forwarded-For $proxy_add_x_forwarded_for;
+                   proxy_set_header Host $http_host;
+                   proxy_redirect false;
+
+                   if (-f $request_filename/index.html) {
+                                           rewrite (.*) $1/index.html break;
+                          }
+                          if (-f $request_filename.html) {
+                                           rewrite (.*) $1.html break;
+                          }
+
+                          if (!-f $request_filename) {
+                                           proxy_pass http://mongrels_9000;
+                                           break;
+                          }
+            }
+
+}

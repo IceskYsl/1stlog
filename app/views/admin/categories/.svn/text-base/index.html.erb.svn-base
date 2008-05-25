@@ -1,5 +1,5 @@
 ﻿<div class="mainbody">
-  <div class="navlink"><a href="/admin/index">控制面版</a> » 附件管理</div>
+  <div class="navlink"><a href="/admin/index">控制面版</a> » 分类管理</div>
 </div>
 
 
@@ -14,9 +14,8 @@
       
       <td valign="top" style="width:20px;"></td>
       <td valign="top">
-        <form action="admincp.php?job=comment" method="POST" name="form">
-         <%=render(:partial => "items")%>  
-        </form>
+          <%=render(:partial => "items")%>  
+ 
       </td>
     </tr>
   </table>

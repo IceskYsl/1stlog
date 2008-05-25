@@ -1,17 +1,17 @@
 8
 
 dir
-74
+78
 https://1stlog.googlecode.com/svn/trunk/app/controllers/admin
 https://1stlog.googlecode.com/svn
 
 
 
-2008-05-20T10:31:11.870824Z
-72
-wujunchen
+2008-05-24T19:45:58.164440Z
+78
+iceskysl
 has-props
-has-prop-mods
+
 svn:special svn:externals svn:needs-lock
 
 
@@ -28,7 +28,7 @@ svn:special svn:externals svn:needs-lock
 
 attachments_controller.rb
 file
-
+74
 
 
 
@@ -40,7 +40,7 @@ wujunchen
 
 usergroups_controller.rb
 file
-
+74
 
 
 
@@ -56,15 +56,15 @@ file
 
 
 
-2008-05-23T16:33:03.000000Z
-f581bbeec3bc98a1703d1b5f1ca57273
-2008-05-20T10:31:11.870824Z
-72
-wujunchen
+2008-05-24T19:27:42.000000Z
+cc00036e3ef74cd8d66da9afb392852f
+2008-05-24T19:45:58.164440Z
+78
+iceskysl
 
 plugins_controller.rb
 file
-
+74
 
 
 
@@ -76,7 +76,7 @@ iceskysl
 
 themes_controller.rb
 file
-
+74
 
 
 
@@ -88,7 +88,7 @@ iceskysl
 
 comments_controller.rb
 file
-
+74
 
 
 
@@ -104,15 +104,15 @@ file
 
 
 
-2008-05-23T16:33:03.000000Z
-7d8bb2c85b134fda5d1842b3fe111c61
-2008-05-20T10:31:11.870824Z
-72
-wujunchen
+2008-05-24T19:00:39.000000Z
+eb1707f888a72e0292d89dbd6ebf1d98
+2008-05-24T19:45:58.164440Z
+78
+iceskysl
 
 caches_controller.rb
 file
-
+74
 
 
 
@@ -124,7 +124,7 @@ iceskysl
 
 configurations_controller.rb
 file
-
+74
 
 
 
@@ -136,7 +136,7 @@ wujunchen
 
 tags_controller.rb
 file
-
+74
 
 
 
@@ -148,7 +148,7 @@ wujunchen
 
 profile_controller.rb
 file
-
+74
 
 
 
@@ -160,7 +160,7 @@ wujunchen
 
 users_controller.rb
 file
-
+74
 
 
 
@@ -172,7 +172,7 @@ wujunchen
 
 topics_controller.rb
 file
-
+74
 
 
 
@@ -182,21 +182,21 @@ a8090b6bc0c3175cdd01b97b4523e785
 72
 wujunchen
 
-types_controller.rb
+logs_controller.rb
 file
 
 
 
-delete
-2008-05-23T16:33:03.000000Z
-00f4de9a1c34bd49623d3534819caf8e
-2008-05-20T10:31:11.870824Z
-72
-wujunchen
+
+2008-05-24T17:42:36.000000Z
+5b324f364654c106208d6b81dc5accfc
+2008-05-24T19:45:58.164440Z
+78
+iceskysl
 
 index_controller.rb
 file
-
+74
 
 
 

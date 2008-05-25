@@ -1,11 +1,15 @@
+K 26
+svn:wc:ra_dav:activity-url
+V 14
+/svn/!svn/act/
 K 25
 svn:wc:ra_dav:version-url
 V 25
-/svn/!svn/ver/66/trunk/db
+/svn/!svn/ver/81/trunk/db
 END
 schema.rb
 K 25
 svn:wc:ra_dav:version-url
 V 35
-/svn/!svn/ver/66/trunk/db/schema.rb
+/svn/!svn/ver/81/trunk/db/schema.rb
 END

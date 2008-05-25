@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 33
-/svn/!svn/ver/66/trunk/db/migrate
+/svn/!svn/ver/81/trunk/db/migrate
 END
 015_init_config.rb
 K 25
@@ -37,7 +37,7 @@ END
 K 25
 svn:wc:ra_dav:version-url
 V 58
-/svn/!svn/ver/66/trunk/db/migrate/005_create_categories.rb
+/svn/!svn/ver/81/trunk/db/migrate/005_create_categories.rb
 END
 007_create_comments.rb
 K 25
@@ -61,7 +61,7 @@ END
 K 25
 svn:wc:ra_dav:version-url
 V 58
-/svn/!svn/ver/66/trunk/db/migrate/016_create_statistics.rb
+/svn/!svn/ver/81/trunk/db/migrate/016_create_statistics.rb
 END
 001_create_topics.rb
 K 25
@@ -69,23 +69,17 @@ svn:wc:ra_dav:version-url
 V 54
 /svn/!svn/ver/66/trunk/db/migrate/001_create_topics.rb
 END
-002_create_users.rb
-K 25
-svn:wc:ra_dav:version-url
-V 53
-/svn/!svn/ver/66/trunk/db/migrate/002_create_users.rb
-END
 013_add_nature_id.rb
 K 25
 svn:wc:ra_dav:version-url
 V 54
 /svn/!svn/ver/66/trunk/db/migrate/013_add_nature_id.rb
 END
-008_create_tags.rb
+002_create_users.rb
 K 25
 svn:wc:ra_dav:version-url
-V 52
-/svn/!svn/ver/66/trunk/db/migrate/008_create_tags.rb
+V 53
+/svn/!svn/ver/66/trunk/db/migrate/002_create_users.rb
 END
 011_add_track_backs_count.rb
 K 25
@@ -93,15 +87,15 @@ svn:wc:ra_dav:version-url
 V 62
 /svn/!svn/ver/66/trunk/db/migrate/011_add_track_backs_count.rb
 END
+008_create_tags.rb
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/66/trunk/db/migrate/008_create_tags.rb
+END
 010_create_track_backs.rb
 K 25
 svn:wc:ra_dav:version-url
 V 59
 /svn/!svn/ver/66/trunk/db/migrate/010_create_track_backs.rb
-END
-004_create_types.rb
-K 25
-svn:wc:ra_dav:version-url
-V 53
-/svn/!svn/ver/66/trunk/db/migrate/004_create_types.rb
 END

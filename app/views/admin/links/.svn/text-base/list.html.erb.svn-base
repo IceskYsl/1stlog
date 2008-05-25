@@ -1,7 +1,3 @@
-
-
-
-
 ﻿<div class="mainbody">
   <div class="navlink"><a href="/admin/index">控制面版</a> » 链接管理</div>
 </div>
@@ -18,11 +14,11 @@
       
       <td valign="top" style="width:20px;"></td>
       <td valign="top">
-        <% form_tag :action => 'create' do %>
-            <%= render :partial => 'form' %>
-        <% end %>
+          <%=render(:partial => "items")%>  
+ 
       </td>
     </tr>
   </table>
 </div>
 
+ 

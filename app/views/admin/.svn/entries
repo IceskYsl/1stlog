@@ -32,13 +32,13 @@ dir
 plugins
 dir
 
-categories
+themes
 dir
 
 comments
 dir
 
-themes
+categories
 dir
 
 caches
@@ -53,14 +53,21 @@ dir
 profile
 dir
 
-topics
+users
 dir
 
-users
+topics
 dir
 
 types
 dir
+
+logs
+dir
+
+
+
+add
 
 index
 dir

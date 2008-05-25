@@ -20,10 +20,10 @@ class CreateStatistics < ActiveRecord::Migration
       Statistic.new(:name=>k,:value=>v).save
     end
     
-    #初始化版权信息等
-    YAML::load(File.open("#{RAILS_ROOT}/config/appconfig.yml")).each do |k,v|
-      Statistic.new(:name=>k,:value=>v).save
-    end
+#    #初始化版权信息等
+#    YAML::load(File.open("#{RAILS_ROOT}/config/appconfig.yml")).each do |k,v|
+#      Statistic.new(:name=>k,:value=>v).save
+#    end
     
   end
 

@@ -1,17 +1,17 @@
 8
 
 dir
-74
+81
 https://1stlog.googlecode.com/svn/trunk/db/migrate
 https://1stlog.googlecode.com/svn
 
 
 
-2008-04-22T01:27:37.349214Z
-66
+2008-05-24T19:47:59.525361Z
+81
 iceskysl
 has-props
-has-prop-mods
+
 svn:special svn:externals svn:needs-lock
 
 
@@ -28,7 +28,7 @@ svn:special svn:externals svn:needs-lock
 
 015_init_config.rb
 file
-
+74
 
 
 
@@ -40,7 +40,7 @@ iceskysl
 
 003_create_user_groups.rb
 file
-
+74
 
 
 
@@ -52,7 +52,7 @@ iceskysl
 
 006_create_attachments.rb
 file
-
+74
 
 
 
@@ -64,7 +64,7 @@ iceskysl
 
 012_create_natures.rb
 file
-
+74
 
 
 
@@ -76,7 +76,7 @@ iceskysl
 
 009_create_links.rb
 file
-
+74
 
 
 
@@ -92,15 +92,15 @@ file
 
 
 
-2008-05-23T16:34:19.000000Z
-8e1b66f820fa3857492a4b104dd6d019
-2008-04-22T01:27:37.349214Z
-66
+2008-05-24T18:01:44.000000Z
+4148bcc935573a93efb630c6f5a1de48
+2008-05-24T19:47:59.525361Z
+81
 iceskysl
 
 007_create_comments.rb
 file
-
+74
 
 
 
@@ -112,7 +112,7 @@ iceskysl
 
 017_create_themes.rb
 file
-
+74
 
 
 
@@ -124,7 +124,7 @@ iceskysl
 
 014_create_configurations.rb
 file
-
+74
 
 
 
@@ -140,15 +140,15 @@ file
 
 
 
-2008-05-23T16:34:19.000000Z
-af715499acaba1d7dbe97da50c2e39b1
-2008-04-22T01:27:37.349214Z
-66
+2008-05-24T18:04:29.000000Z
+70f12b355cf440eeab53f3f7a542abdd
+2008-05-24T19:47:59.525361Z
+81
 iceskysl
 
 001_create_topics.rb
 file
-
+74
 
 
 
@@ -158,21 +158,9 @@ file
 66
 iceskysl
 
-002_create_users.rb
-file
-
-
-
-
-2008-05-23T16:34:19.000000Z
-72abf240e904f4600daa9c84dc06555f
-2008-04-22T01:27:37.349214Z
-66
-iceskysl
-
 013_add_nature_id.rb
 file
-
+74
 
 
 
@@ -182,21 +170,21 @@ file
 66
 iceskysl
 
-008_create_tags.rb
+002_create_users.rb
 file
-
+74
 
 
 
 2008-05-23T16:34:19.000000Z
-68cbb9aba3cf3bdaeb93c2bba155f193
+72abf240e904f4600daa9c84dc06555f
 2008-04-22T01:27:37.349214Z
 66
 iceskysl
 
 011_add_track_backs_count.rb
 file
-
+74
 
 
 
@@ -206,26 +194,26 @@ dc1009eb0354ddc9e34f72d8fca0136e
 66
 iceskysl
 
+008_create_tags.rb
+file
+74
+
+
+
+2008-05-23T16:34:19.000000Z
+68cbb9aba3cf3bdaeb93c2bba155f193
+2008-04-22T01:27:37.349214Z
+66
+iceskysl
+
 010_create_track_backs.rb
 file
-
+74
 
 
 
 2008-05-23T16:34:19.000000Z
 38a195b4455ac2e1f83f0b0f179a05c2
-2008-04-22T01:27:37.349214Z
-66
-iceskysl
-
-004_create_types.rb
-file
-
-
-
-delete
-2008-05-23T16:34:19.000000Z
-f21cd53148d458346055965b9f4af600
 2008-04-22T01:27:37.349214Z
 66
 iceskysl
