@@ -1,0 +1,8 @@
+--- 
+cwd: /opt/dev/1stlog/
+log_file: log/mongrel.log
+port: "9000"
+environment: production
+address: 127.0.0.1
+pid_file: tmp/pids/mongrel.pid
+servers: 2
